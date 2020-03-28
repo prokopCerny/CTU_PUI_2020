@@ -5,6 +5,10 @@
 #include <cstdint>
 #include "problem.h"
 
+#ifdef TIME_EXECUTION
+#include <chrono>
+#endif
+
 using std::cout;
 using std::cerr;
 using std::endl;
@@ -31,20 +35,20 @@ private:
         facts_hash{ std::hash<vector<bool>>{}(facts) } {}
 
 public:
-    const vector<bool> facts;
-    const vector<int> path;
-    const uint64_t cost;
-    const size_t facts_hash;
+    vector<bool> facts;
+    vector<int> path;
+    uint64_t cost;
+    size_t facts_hash;
 
     explicit State(strips_t &problem) :
         cost{0},
         facts( init_facts(problem) ),
-        facts_hash{ std::hash<vector<bool>>{}(init_facts(problem)) } {};
+        facts_hash{ std::hash<vector<bool>>{}(facts) } {};
 
     bool is_operator_applicable(strips_operator_t &op) {
         bool applicable = true;
         for (size_t pre_idx = 0; pre_idx < op.pre_size; pre_idx++) {
-            if (! facts[op.pre[pre_idx]]) {
+            if (not facts[op.pre[pre_idx]]) {
                 applicable = false;
                 break;
             }
@@ -107,7 +111,7 @@ struct my_less_compare {
  * @param problem
  * @return
  */
-State get_plan(strips_t &problem) {
+State get_plan_1(strips_t &problem) {
     unordered_map<size_t, uint64_t> distance;
     set<std::pair<uint64_t, State>, my_less_compare> queue;
 
@@ -116,12 +120,11 @@ State get_plan(strips_t &problem) {
     queue.insert(std::make_pair(0, std::move(start_state)));
 
     while (not queue.empty()) {
-        std::pair<uint64_t, State> cur_state_pair(*(queue.begin()));
-
+        std::pair<uint64_t, State> cur_state_pair = *(queue.begin());
         queue.erase(queue.begin());
 
         uint64_t cost = cur_state_pair.first;
-        State cur_state = cur_state_pair.second;
+        State cur_state = std::move(cur_state_pair.second);
 
         if (cur_state.is_goal_state(problem)) {
             return cur_state;
@@ -129,18 +132,21 @@ State get_plan(strips_t &problem) {
 
         for (size_t op_idx = 0; op_idx < problem.num_operators; op_idx++) {
             strips_operator_t &current_operator = problem.operators[op_idx];
+
             if (cur_state.is_operator_applicable(current_operator)) {
                 State next_state = cur_state.apply_operator(current_operator, op_idx);
                 uint64_t heuristic_val = 0; //TODO
                 uint64_t predicted_cost = next_state.cost + heuristic_val;
                 size_t appearance_count = distance.count(next_state.facts_hash);
+
                 if (appearance_count == 0 || distance[next_state.facts_hash] > predicted_cost) {
+                    auto temp_pair = std::make_pair(predicted_cost, std::move(next_state));
                     if (appearance_count != 0) {
-                        queue.erase(queue.find(std::make_pair(distance[next_state.facts_hash], next_state)));
+                        queue.erase(queue.find(temp_pair));
                     }
 
-                    distance[next_state.facts_hash] = predicted_cost;
-                    queue.insert(std::make_pair(predicted_cost, std::move(next_state)));
+                    distance[temp_pair.second.facts_hash] = predicted_cost;
+                    queue.insert(std::move(temp_pair));
                 }
             }
         }
@@ -151,7 +157,68 @@ State get_plan(strips_t &problem) {
     return not_found;
 }
 
+/**
+ * A* using pairs of <cost, hash> and a supplementary map of <hash, State object>
+ * @param problem
+ * @return
+ */
+State get_plan_2(strips_t &problem) {
+    unordered_map<size_t, uint64_t> distance;
+    unordered_map<size_t, State> states;
+    set<std::pair<uint64_t, size_t>> queue;
+
+    State start_state(problem);
+    distance[start_state.facts_hash] = 0;
+    queue.insert(std::make_pair(0, start_state.facts_hash));
+    states.insert(std::make_pair(start_state.facts_hash, std::move(start_state)));
+
+    while (not queue.empty()) {
+        State cur_state = std::move(states.find(queue.begin()->second)->second);
+        states.erase(cur_state.facts_hash);
+        queue.erase(queue.begin());
+
+        if (cur_state.is_goal_state(problem)) {
+            return cur_state;
+        }
+
+        for (size_t op_idx = 0; op_idx < problem.num_operators; op_idx++) {
+            strips_operator_t &current_operator = problem.operators[op_idx];
+
+            if (cur_state.is_operator_applicable(current_operator)) {
+                State next_state = cur_state.apply_operator(current_operator, op_idx);
+                uint64_t heuristic_val = 0; //TODO
+                uint64_t predicted_cost = next_state.cost + heuristic_val;
+                size_t appearance_count = distance.count(next_state.facts_hash);
+
+                if (appearance_count == 0 || distance[next_state.facts_hash] > predicted_cost) {
+                    if (appearance_count != 0) {
+                        queue.erase(queue.find(std::make_pair(distance[next_state.facts_hash], next_state.facts_hash)));
+                    }
+
+                    distance[next_state.facts_hash] = predicted_cost;
+                    queue.insert(std::make_pair(predicted_cost, next_state.facts_hash));
+
+                    auto it = states.find(next_state.facts_hash);
+                    if ( it != states.end() ) {
+                        it->second = std::move(next_state);
+                    } else {
+                        states.insert(std::make_pair(next_state.facts_hash, std::move(next_state)));
+                    }
+                }
+            }
+        }
+
+    }
+
+    State not_found = State(problem);
+    return not_found;
+}
+
+
 int main(int argc, char *argv[]) {
+#ifdef TIME_EXECUTION
+    auto start = std::chrono::high_resolution_clock::now();
+#endif
     strips_t strips;
 
     if (argc != 3){
@@ -161,11 +228,19 @@ int main(int argc, char *argv[]) {
 
     stripsRead(&strips, argv[1]);
 
-    State final = get_plan(strips);
+    State final = get_plan_2(strips);
     for (auto op_index : final.path) {
         cout << strips.operators[op_index].name << endl;
     }
 
     stripsFree(&strips);
+
+#ifdef TIME_EXECUTION
+    auto stop = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+    cerr << "Time taken by function: "
+         << duration.count() << " microseconds" << endl;
+#endif
+
     return 0;
 }
