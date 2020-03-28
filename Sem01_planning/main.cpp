@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <set>
+#include <unordered_map>
 #include <cstdint>
 #include "problem.h"
 
@@ -9,6 +10,7 @@ using std::cerr;
 using std::endl;
 using std::vector;
 using std::set;
+using std::unordered_map;
 
 
 
@@ -26,7 +28,7 @@ private:
         facts(std::move(succ_facts)),
         path(std::move(succ_path)),
         cost{new_cost},
-        facts_hash{ std::hash<vector<bool>>{}(succ_facts) } {}
+        facts_hash{ std::hash<vector<bool>>{}(facts) } {}
 
 public:
     const vector<bool> facts;
@@ -48,6 +50,17 @@ public:
             }
         }
         return applicable;
+    }
+
+    bool is_goal_state(strips_t &problem) {
+        bool goal = true;
+        for (size_t goal_idx = 0; goal_idx < problem.goal_size; goal_idx++) {
+            if (not facts[problem.goal[goal_idx]]) {
+                goal = false;
+                break;
+            }
+        }
+        return goal;
     }
 
     State apply_operator(strips_operator_t &op, int operator_idx) {
@@ -89,6 +102,55 @@ struct my_less_compare {
     }
 };
 
+/**
+ * A* using pairs of <cost, State object>
+ * @param problem
+ * @return
+ */
+State get_plan(strips_t &problem) {
+    unordered_map<size_t, uint64_t> distance;
+    set<std::pair<uint64_t, State>, my_less_compare> queue;
+
+    State start_state(problem);
+    distance[start_state.facts_hash] = 0;
+    queue.insert(std::make_pair(0, std::move(start_state)));
+
+    while (not queue.empty()) {
+        std::pair<uint64_t, State> cur_state_pair(*(queue.begin()));
+
+        queue.erase(queue.begin());
+
+        uint64_t cost = cur_state_pair.first;
+        State cur_state = cur_state_pair.second;
+
+        if (cur_state.is_goal_state(problem)) {
+            return cur_state;
+        }
+
+        for (size_t op_idx = 0; op_idx < problem.num_operators; op_idx++) {
+            strips_operator_t &current_operator = problem.operators[op_idx];
+            if (cur_state.is_operator_applicable(current_operator)) {
+                State next_state = cur_state.apply_operator(current_operator, op_idx);
+                uint64_t heuristic_val = 0; //TODO
+                uint64_t predicted_cost = next_state.cost + heuristic_val;
+                size_t appearance_count = distance.count(next_state.facts_hash);
+                if (appearance_count == 0 || distance[next_state.facts_hash] > predicted_cost) {
+                    if (appearance_count != 0) {
+                        queue.erase(queue.find(std::make_pair(distance[next_state.facts_hash], next_state)));
+                    }
+
+                    distance[next_state.facts_hash] = predicted_cost;
+                    queue.insert(std::make_pair(predicted_cost, std::move(next_state)));
+                }
+            }
+        }
+
+    }
+
+    State not_found = State(problem);
+    return not_found;
+}
+
 int main(int argc, char *argv[]) {
     strips_t strips;
 
@@ -98,8 +160,10 @@ int main(int argc, char *argv[]) {
     }
 
     stripsRead(&strips, argv[1]);
-    for (size_t i = 0; i < strips.num_facts; i++) {
-        cout << strips.fact_names[i] << endl;
+
+    State final = get_plan(strips);
+    for (auto op_index : final.path) {
+        cout << strips.operators[op_index].name << endl;
     }
 
     stripsFree(&strips);
