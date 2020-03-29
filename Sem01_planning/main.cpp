@@ -4,6 +4,7 @@
 #include <unordered_map>
 #include <cstdint>
 #include <limits>
+#include <string>
 #include "problem.h"
 
 #ifdef TIME_EXECUTION
@@ -16,8 +17,41 @@ using std::endl;
 using std::vector;
 using std::set;
 using std::unordered_map;
+using std::string;
 
 class State;
+
+class StripsOperator {
+public:
+    string name;
+    int cost;
+    vector<int> preconditions;
+    vector<int> add_effects;
+    vector<int> del_effects;
+
+    explicit StripsOperator(strips_operator_t &op) :
+        name(op.name),
+        cost{op.cost},
+        preconditions(op.pre, op.pre + op.pre_size),
+        add_effects(op.add_eff, op.add_eff + op.add_eff_size),
+        del_effects(op.del_eff, op.del_eff + op.del_eff_size) {}
+};
+
+class Strips {
+public:
+    int num_facts;
+    vector<string> fact_names;
+    vector<int> initial_state;
+    vector<int> goal_state;
+    vector<StripsOperator> operators;
+
+    explicit Strips(strips_t &strips) :
+        num_facts{strips.num_facts},
+        fact_names(strips.fact_names, strips.fact_names + num_facts),
+        initial_state(strips.init, strips.init + strips.init_size),
+        goal_state(strips.goal, strips.goal + strips.goal_size),
+        operators(strips.operators, strips.operators + strips.num_operators) {}
+};
 
 uint64_t hmax(const State &state, const strips_t &problem, const vector<vector<bool>> &op_preconditions);
 
