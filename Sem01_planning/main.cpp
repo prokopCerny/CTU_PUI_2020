@@ -54,6 +54,7 @@ public:
 };
 
 uint64_t hmax(const State &state, const strips_t &problem, const vector<vector<bool>> &op_preconditions);
+uint64_t hmax(const State &state, const Strips &problem, const vector<vector<bool>> &op_preconditions);
 
 vector<bool> init_facts(const strips_t &problem) {
     vector<bool> facts(problem.num_facts, false);
@@ -63,10 +64,29 @@ vector<bool> init_facts(const strips_t &problem) {
     return facts;
 }
 
+vector<bool> init_facts(const Strips &problem) {
+    vector<bool> facts(problem.num_facts, false);
+    for (auto fact : problem.initial_state) {
+        facts[fact] = true;
+    }
+    return facts;
+}
+
 bool is_goal_facts_subset(const vector<bool> &facts, const strips_t &problem) {
     bool goal = true;
     for (size_t goal_idx = 0; goal_idx < problem.goal_size; goal_idx++) {
         if (not facts[problem.goal[goal_idx]]) {
+            goal = false;
+            break;
+        }
+    }
+    return goal;
+}
+
+bool is_goal_facts_subset(const vector<bool> &facts, const Strips &problem) {
+    bool goal = true;
+    for (auto goal_fact : problem.goal_state) {
+        if (not facts[goal_fact]) {
             goal = false;
             break;
         }
@@ -93,6 +113,11 @@ public:
         facts( init_facts(problem) ),
         facts_hash{ std::hash<vector<bool>>{}(facts) } {};
 
+    explicit State(const Strips &problem) :
+            cost{0},
+            facts( init_facts(problem) ),
+            facts_hash{ std::hash<vector<bool>>{}(facts) } {};
+
     bool is_operator_applicable(const strips_operator_t &op) {
         bool applicable = true;
         for (size_t pre_idx = 0; pre_idx < op.pre_size; pre_idx++) {
@@ -104,7 +129,22 @@ public:
         return applicable;
     }
 
+    bool is_operator_applicable(const StripsOperator &op) {
+        bool applicable = true;
+        for (auto precondition_fact : op.preconditions) {
+            if (not facts[precondition_fact]) {
+                applicable = false;
+                break;
+            }
+        }
+        return applicable;
+    }
+
     bool is_goal_state(const strips_t &problem) {
+        return is_goal_facts_subset(facts, problem);
+    }
+
+    bool is_goal_state(const Strips &problem) {
         return is_goal_facts_subset(facts, problem);
     }
 
@@ -130,6 +170,33 @@ public:
         for (size_t add_idx = 0; add_idx < op.add_eff_size; add_idx++) {
             new_facts[op.add_eff[add_idx]] = true;
         }
+        State succ(new_facts, new_path, new_cost);
+        return succ;
+    }
+
+    State apply_operator(const StripsOperator &op, const int operator_idx) {
+
+        #ifdef MY_DEBUG
+        if(! is_operator_applicable(op)) {
+            cerr << "Can't apply operator!!!" << endl;
+            exit(-1);
+        }
+        #endif
+
+        vector<bool> new_facts(facts);
+        vector<int> new_path(path);
+
+        uint64_t new_cost = cost + op.cost;
+        new_path.push_back(operator_idx);
+
+        for (auto del_fact : op.del_effects) {
+            new_facts[del_fact] = false;
+        }
+
+        for (auto add_fact : op.add_effects) {
+            new_facts[add_fact] = true;
+        }
+
         State succ(new_facts, new_path, new_cost);
         return succ;
     }
@@ -255,6 +322,58 @@ State get_plan_2(const strips_t &problem, const vector<vector<bool>> &op_precond
     return not_found;
 }
 
+State get_plan_2(const Strips &problem, const vector<vector<bool>> &op_preconditions) {
+    unordered_map<size_t, uint64_t> distance;
+    unordered_map<size_t, State> states;
+    set<std::pair<uint64_t, size_t>> queue;
+
+    State start_state(problem);
+    distance[start_state.facts_hash] = 0;
+    queue.insert(std::make_pair(0, start_state.facts_hash));
+    states.insert(std::make_pair(start_state.facts_hash, std::move(start_state)));
+
+    while (not queue.empty()) {
+        State cur_state = std::move(states.find(queue.begin()->second)->second);
+        states.erase(cur_state.facts_hash);
+        queue.erase(queue.begin());
+
+        if (cur_state.is_goal_state(problem)) {
+            return cur_state;
+        }
+
+        for (size_t op_idx = 0; op_idx < problem.operators.size(); op_idx++) {
+            const StripsOperator &current_operator = problem.operators[op_idx];
+
+            if (cur_state.is_operator_applicable(current_operator)) {
+                State next_state = cur_state.apply_operator(current_operator, op_idx);
+                uint64_t heuristic_val = hmax(next_state, problem, op_preconditions); //TODO
+                uint64_t predicted_cost = next_state.cost + heuristic_val;
+                size_t appearance_count = distance.count(next_state.facts_hash);
+
+                if (appearance_count == 0 || distance[next_state.facts_hash] > predicted_cost) {
+                    if (appearance_count != 0) {
+                        queue.erase(queue.find(std::make_pair(distance[next_state.facts_hash], next_state.facts_hash)));
+                    }
+
+                    distance[next_state.facts_hash] = predicted_cost;
+                    queue.insert(std::make_pair(predicted_cost, next_state.facts_hash));
+
+                    auto it = states.find(next_state.facts_hash);
+                    if ( it != states.end() ) {
+                        it->second = std::move(next_state);
+                    } else {
+                        states.insert(std::make_pair(next_state.facts_hash, std::move(next_state)));
+                    }
+                }
+            }
+        }
+
+    }
+
+    State not_found = State(problem);
+    return not_found;
+}
+
 vector<vector<bool>> create_op_preconditions(const strips_t &problem) {
     vector<vector<bool>> op_preconditions(problem.num_operators, vector<bool>(problem.num_facts, false));
     for (size_t op_idx = 0; op_idx < problem.num_operators; op_idx++) {
@@ -341,6 +460,79 @@ uint64_t hmax(const State &state, const strips_t &problem, const vector<vector<b
     return heur;
 }
 
+uint64_t hmax(const State &state, const Strips &problem, const vector<vector<bool>> &op_preconditions) {
+    static unordered_map<size_t, uint64_t> cache;
+
+    if (cache.count(state.facts_hash) != 0) {
+        return cache[state.facts_hash];
+    }
+
+    const vector<bool> &state_facts = state.facts;
+    vector<int> delta(problem.num_facts, std::numeric_limits<int>::max());
+    for (size_t fact_idx = 0; fact_idx < problem.num_facts; ++fact_idx) {
+        if (state_facts[fact_idx]) {
+            delta[fact_idx] = 0;
+        }
+    }
+
+    vector<int> U(problem.operators.size(), -1);
+
+    for (size_t op_idx = 0; op_idx < problem.operators.size(); ++op_idx) {
+        const StripsOperator &current_operator = problem.operators[op_idx];
+
+        U[op_idx] = current_operator.preconditions.size();
+
+        if (current_operator.preconditions.empty()) {
+            for (auto add_fact : current_operator.add_effects) {
+                delta[add_fact] = std::min(delta[add_fact], current_operator.cost);
+            }
+        }
+    }
+
+
+    vector<bool> C(problem.num_facts, false);
+
+    set<std::pair<int, size_t>> queue;
+    for (size_t fact_idx = 0; fact_idx < problem.num_facts; fact_idx++) {
+        queue.emplace(delta[fact_idx], fact_idx);
+    }
+
+    while( not is_goal_facts_subset(C, problem)) {
+        size_t k = queue.begin()->second;
+        queue.erase(queue.begin());
+        C[k] = true;
+
+        for (size_t op_idx = 0; op_idx < problem.operators.size(); ++op_idx) {
+            if (op_preconditions[op_idx][k]) {
+                const StripsOperator &current_operator = problem.operators[op_idx];
+                U[op_idx]--;
+
+                if (U[op_idx] == 0) {
+                    for (auto cur_add_fact : current_operator.add_effects) {
+                        int potentialCost = current_operator.cost + delta[k];
+
+                        if (delta[cur_add_fact] > potentialCost) {
+                            if (not C[cur_add_fact]) {
+                                queue.erase(queue.find(std::make_pair(delta[cur_add_fact], cur_add_fact)));
+                                queue.emplace(potentialCost, cur_add_fact);
+                            }
+                            delta[cur_add_fact] = potentialCost;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    uint64_t heur{0};
+    for (auto goal_fact : problem.goal_state) {
+        heur = std::max(heur, (uint64_t) delta[goal_fact]);
+    }
+
+    cache[state.facts_hash] = heur;
+    return heur;
+}
+
 
 int main(int argc, char *argv[]) {
 #ifdef TIME_EXECUTION
@@ -354,6 +546,7 @@ int main(int argc, char *argv[]) {
     }
 
     stripsRead(&strips, argv[1]);
+//    Strips myStrips(strips);
     State start_state(strips);
     const vector<vector<bool>> op_preconditions = create_op_preconditions(strips);
     State final = get_plan_2(strips, op_preconditions);
