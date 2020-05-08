@@ -1,0 +1,563 @@
+49
+(clear tile_0-1)
+(clear tile_0-2)
+(clear tile_0-3)
+(clear tile_1-1)
+(clear tile_1-2)
+(clear tile_1-3)
+(clear tile_2-1)
+(clear tile_2-2)
+(clear tile_2-3)
+(clear tile_3-1)
+(clear tile_3-2)
+(clear tile_3-3)
+(painted tile_1-1 white)
+(painted tile_1-2 black)
+(painted tile_1-3 white)
+(painted tile_2-1 black)
+(painted tile_2-2 white)
+(painted tile_2-3 black)
+(painted tile_3-1 white)
+(painted tile_3-2 black)
+(painted tile_3-3 white)
+(robot-at robot1 tile_0-1)
+(robot-at robot1 tile_0-2)
+(robot-at robot1 tile_0-3)
+(robot-at robot1 tile_1-1)
+(robot-at robot1 tile_1-2)
+(robot-at robot1 tile_1-3)
+(robot-at robot1 tile_2-1)
+(robot-at robot1 tile_2-2)
+(robot-at robot1 tile_2-3)
+(robot-at robot1 tile_3-1)
+(robot-at robot1 tile_3-2)
+(robot-at robot1 tile_3-3)
+(robot-at robot2 tile_0-1)
+(robot-at robot2 tile_0-2)
+(robot-at robot2 tile_0-3)
+(robot-at robot2 tile_1-1)
+(robot-at robot2 tile_1-2)
+(robot-at robot2 tile_1-3)
+(robot-at robot2 tile_2-1)
+(robot-at robot2 tile_2-2)
+(robot-at robot2 tile_2-3)
+(robot-at robot2 tile_3-1)
+(robot-at robot2 tile_3-2)
+(robot-at robot2 tile_3-3)
+(robot-has robot1 black)
+(robot-has robot1 white)
+(robot-has robot2 black)
+(robot-has robot2 white)
+14 1 2 3 4 5 6 8 9 10 11 21 40 46 47
+9 12 13 14 15 16 17 18 19 20
+102
+change-color robot1 black white
+1 45
+1 46
+1 45
+5
+change-color robot1 white black
+1 46
+1 45
+1 46
+5
+change-color robot2 black white
+1 47
+1 48
+1 47
+5
+change-color robot2 white black
+1 48
+1 47
+1 48
+5
+down robot1 tile_1-1 tile_0-1
+2 0 24
+2 3 21
+2 0 24
+1
+down robot1 tile_1-2 tile_0-2
+2 1 25
+2 4 22
+2 1 25
+1
+down robot1 tile_1-3 tile_0-3
+2 2 26
+2 5 23
+2 2 26
+1
+down robot1 tile_2-1 tile_1-1
+2 3 27
+2 6 24
+2 3 27
+1
+down robot1 tile_2-2 tile_1-2
+2 4 28
+2 7 25
+2 4 28
+1
+down robot1 tile_2-3 tile_1-3
+2 5 29
+2 8 26
+2 5 29
+1
+down robot1 tile_3-1 tile_2-1
+2 6 30
+2 9 27
+2 6 30
+1
+down robot1 tile_3-2 tile_2-2
+2 7 31
+2 10 28
+2 7 31
+1
+down robot1 tile_3-3 tile_2-3
+2 8 32
+2 11 29
+2 8 32
+1
+down robot2 tile_1-1 tile_0-1
+2 0 36
+2 3 33
+2 0 36
+1
+down robot2 tile_1-2 tile_0-2
+2 1 37
+2 4 34
+2 1 37
+1
+down robot2 tile_1-3 tile_0-3
+2 2 38
+2 5 35
+2 2 38
+1
+down robot2 tile_2-1 tile_1-1
+2 3 39
+2 6 36
+2 3 39
+1
+down robot2 tile_2-2 tile_1-2
+2 4 40
+2 7 37
+2 4 40
+1
+down robot2 tile_2-3 tile_1-3
+2 5 41
+2 8 38
+2 5 41
+1
+down robot2 tile_3-1 tile_2-1
+2 6 42
+2 9 39
+2 6 42
+1
+down robot2 tile_3-2 tile_2-2
+2 7 43
+2 10 40
+2 7 43
+1
+down robot2 tile_3-3 tile_2-3
+2 8 44
+2 11 41
+2 8 44
+1
+left robot1 tile_0-2 tile_0-1
+2 0 22
+2 1 21
+2 0 22
+1
+left robot1 tile_0-3 tile_0-2
+2 1 23
+2 2 22
+2 1 23
+1
+left robot1 tile_1-2 tile_1-1
+2 3 25
+2 4 24
+2 3 25
+1
+left robot1 tile_1-3 tile_1-2
+2 4 26
+2 5 25
+2 4 26
+1
+left robot1 tile_2-2 tile_2-1
+2 6 28
+2 7 27
+2 6 28
+1
+left robot1 tile_2-3 tile_2-2
+2 7 29
+2 8 28
+2 7 29
+1
+left robot1 tile_3-2 tile_3-1
+2 9 31
+2 10 30
+2 9 31
+1
+left robot1 tile_3-3 tile_3-2
+2 10 32
+2 11 31
+2 10 32
+1
+left robot2 tile_0-2 tile_0-1
+2 0 34
+2 1 33
+2 0 34
+1
+left robot2 tile_0-3 tile_0-2
+2 1 35
+2 2 34
+2 1 35
+1
+left robot2 tile_1-2 tile_1-1
+2 3 37
+2 4 36
+2 3 37
+1
+left robot2 tile_1-3 tile_1-2
+2 4 38
+2 5 37
+2 4 38
+1
+left robot2 tile_2-2 tile_2-1
+2 6 40
+2 7 39
+2 6 40
+1
+left robot2 tile_2-3 tile_2-2
+2 7 41
+2 8 40
+2 7 41
+1
+left robot2 tile_3-2 tile_3-1
+2 9 43
+2 10 42
+2 9 43
+1
+left robot2 tile_3-3 tile_3-2
+2 10 44
+2 11 43
+2 10 44
+1
+paint-down robot1 tile_1-1 tile_2-1 white
+3 3 27 46
+1 12
+1 3
+2
+paint-down robot1 tile_1-2 tile_2-2 black
+3 4 28 45
+1 13
+1 4
+2
+paint-down robot1 tile_1-3 tile_2-3 white
+3 5 29 46
+1 14
+1 5
+2
+paint-down robot1 tile_2-1 tile_3-1 black
+3 6 30 45
+1 15
+1 6
+2
+paint-down robot1 tile_2-2 tile_3-2 white
+3 7 31 46
+1 16
+1 7
+2
+paint-down robot1 tile_2-3 tile_3-3 black
+3 8 32 45
+1 17
+1 8
+2
+paint-down robot2 tile_1-1 tile_2-1 white
+3 3 39 48
+1 12
+1 3
+2
+paint-down robot2 tile_1-2 tile_2-2 black
+3 4 40 47
+1 13
+1 4
+2
+paint-down robot2 tile_1-3 tile_2-3 white
+3 5 41 48
+1 14
+1 5
+2
+paint-down robot2 tile_2-1 tile_3-1 black
+3 6 42 47
+1 15
+1 6
+2
+paint-down robot2 tile_2-2 tile_3-2 white
+3 7 43 48
+1 16
+1 7
+2
+paint-down robot2 tile_2-3 tile_3-3 black
+3 8 44 47
+1 17
+1 8
+2
+paint-up robot1 tile_1-1 tile_0-1 white
+3 3 21 46
+1 12
+1 3
+2
+paint-up robot1 tile_1-2 tile_0-2 black
+3 4 22 45
+1 13
+1 4
+2
+paint-up robot1 tile_1-3 tile_0-3 white
+3 5 23 46
+1 14
+1 5
+2
+paint-up robot1 tile_2-1 tile_1-1 black
+3 6 24 45
+1 15
+1 6
+2
+paint-up robot1 tile_2-2 tile_1-2 white
+3 7 25 46
+1 16
+1 7
+2
+paint-up robot1 tile_2-3 tile_1-3 black
+3 8 26 45
+1 17
+1 8
+2
+paint-up robot1 tile_3-1 tile_2-1 white
+3 9 27 46
+1 18
+1 9
+2
+paint-up robot1 tile_3-2 tile_2-2 black
+3 10 28 45
+1 19
+1 10
+2
+paint-up robot1 tile_3-3 tile_2-3 white
+3 11 29 46
+1 20
+1 11
+2
+paint-up robot2 tile_1-1 tile_0-1 white
+3 3 33 48
+1 12
+1 3
+2
+paint-up robot2 tile_1-2 tile_0-2 black
+3 4 34 47
+1 13
+1 4
+2
+paint-up robot2 tile_1-3 tile_0-3 white
+3 5 35 48
+1 14
+1 5
+2
+paint-up robot2 tile_2-1 tile_1-1 black
+3 6 36 47
+1 15
+1 6
+2
+paint-up robot2 tile_2-2 tile_1-2 white
+3 7 37 48
+1 16
+1 7
+2
+paint-up robot2 tile_2-3 tile_1-3 black
+3 8 38 47
+1 17
+1 8
+2
+paint-up robot2 tile_3-1 tile_2-1 white
+3 9 39 48
+1 18
+1 9
+2
+paint-up robot2 tile_3-2 tile_2-2 black
+3 10 40 47
+1 19
+1 10
+2
+paint-up robot2 tile_3-3 tile_2-3 white
+3 11 41 48
+1 20
+1 11
+2
+right robot1 tile_0-1 tile_0-2
+2 1 21
+2 0 22
+2 1 21
+1
+right robot1 tile_0-2 tile_0-3
+2 2 22
+2 1 23
+2 2 22
+1
+right robot1 tile_1-1 tile_1-2
+2 4 24
+2 3 25
+2 4 24
+1
+right robot1 tile_1-2 tile_1-3
+2 5 25
+2 4 26
+2 5 25
+1
+right robot1 tile_2-1 tile_2-2
+2 7 27
+2 6 28
+2 7 27
+1
+right robot1 tile_2-2 tile_2-3
+2 8 28
+2 7 29
+2 8 28
+1
+right robot1 tile_3-1 tile_3-2
+2 10 30
+2 9 31
+2 10 30
+1
+right robot1 tile_3-2 tile_3-3
+2 11 31
+2 10 32
+2 11 31
+1
+right robot2 tile_0-1 tile_0-2
+2 1 33
+2 0 34
+2 1 33
+1
+right robot2 tile_0-2 tile_0-3
+2 2 34
+2 1 35
+2 2 34
+1
+right robot2 tile_1-1 tile_1-2
+2 4 36
+2 3 37
+2 4 36
+1
+right robot2 tile_1-2 tile_1-3
+2 5 37
+2 4 38
+2 5 37
+1
+right robot2 tile_2-1 tile_2-2
+2 7 39
+2 6 40
+2 7 39
+1
+right robot2 tile_2-2 tile_2-3
+2 8 40
+2 7 41
+2 8 40
+1
+right robot2 tile_3-1 tile_3-2
+2 10 42
+2 9 43
+2 10 42
+1
+right robot2 tile_3-2 tile_3-3
+2 11 43
+2 10 44
+2 11 43
+1
+up robot1 tile_0-1 tile_1-1
+2 3 21
+2 0 24
+2 3 21
+3
+up robot1 tile_0-2 tile_1-2
+2 4 22
+2 1 25
+2 4 22
+3
+up robot1 tile_0-3 tile_1-3
+2 5 23
+2 2 26
+2 5 23
+3
+up robot1 tile_1-1 tile_2-1
+2 6 24
+2 3 27
+2 6 24
+3
+up robot1 tile_1-2 tile_2-2
+2 7 25
+2 4 28
+2 7 25
+3
+up robot1 tile_1-3 tile_2-3
+2 8 26
+2 5 29
+2 8 26
+3
+up robot1 tile_2-1 tile_3-1
+2 9 27
+2 6 30
+2 9 27
+3
+up robot1 tile_2-2 tile_3-2
+2 10 28
+2 7 31
+2 10 28
+3
+up robot1 tile_2-3 tile_3-3
+2 11 29
+2 8 32
+2 11 29
+3
+up robot2 tile_0-1 tile_1-1
+2 3 33
+2 0 36
+2 3 33
+3
+up robot2 tile_0-2 tile_1-2
+2 4 34
+2 1 37
+2 4 34
+3
+up robot2 tile_0-3 tile_1-3
+2 5 35
+2 2 38
+2 5 35
+3
+up robot2 tile_1-1 tile_2-1
+2 6 36
+2 3 39
+2 6 36
+3
+up robot2 tile_1-2 tile_2-2
+2 7 37
+2 4 40
+2 7 37
+3
+up robot2 tile_1-3 tile_2-3
+2 8 38
+2 5 41
+2 8 38
+3
+up robot2 tile_2-1 tile_3-1
+2 9 39
+2 6 42
+2 9 39
+3
+up robot2 tile_2-2 tile_3-2
+2 10 40
+2 7 43
+2 10 40
+3
+up robot2 tile_2-3 tile_3-3
+2 11 41
+2 8 44
+2 11 41
+3

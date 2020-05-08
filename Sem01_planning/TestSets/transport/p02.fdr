@@ -1,0 +1,2922 @@
+8
+12
+(at package-1 city-loc-1)
+(at package-1 city-loc-10)
+(at package-1 city-loc-2)
+(at package-1 city-loc-3)
+(at package-1 city-loc-4)
+(at package-1 city-loc-5)
+(at package-1 city-loc-6)
+(at package-1 city-loc-7)
+(at package-1 city-loc-8)
+(at package-1 city-loc-9)
+(in package-1 truck-1)
+(in package-1 truck-2)
+12
+(at package-2 city-loc-1)
+(at package-2 city-loc-10)
+(at package-2 city-loc-2)
+(at package-2 city-loc-3)
+(at package-2 city-loc-4)
+(at package-2 city-loc-5)
+(at package-2 city-loc-6)
+(at package-2 city-loc-7)
+(at package-2 city-loc-8)
+(at package-2 city-loc-9)
+(in package-2 truck-1)
+(in package-2 truck-2)
+12
+(at package-3 city-loc-1)
+(at package-3 city-loc-10)
+(at package-3 city-loc-2)
+(at package-3 city-loc-3)
+(at package-3 city-loc-4)
+(at package-3 city-loc-5)
+(at package-3 city-loc-6)
+(at package-3 city-loc-7)
+(at package-3 city-loc-8)
+(at package-3 city-loc-9)
+(in package-3 truck-1)
+(in package-3 truck-2)
+12
+(at package-4 city-loc-1)
+(at package-4 city-loc-10)
+(at package-4 city-loc-2)
+(at package-4 city-loc-3)
+(at package-4 city-loc-4)
+(at package-4 city-loc-5)
+(at package-4 city-loc-6)
+(at package-4 city-loc-7)
+(at package-4 city-loc-8)
+(at package-4 city-loc-9)
+(in package-4 truck-1)
+(in package-4 truck-2)
+10
+(at truck-1 city-loc-1)
+(at truck-1 city-loc-10)
+(at truck-1 city-loc-2)
+(at truck-1 city-loc-3)
+(at truck-1 city-loc-4)
+(at truck-1 city-loc-5)
+(at truck-1 city-loc-6)
+(at truck-1 city-loc-7)
+(at truck-1 city-loc-8)
+(at truck-1 city-loc-9)
+10
+(at truck-2 city-loc-1)
+(at truck-2 city-loc-10)
+(at truck-2 city-loc-2)
+(at truck-2 city-loc-3)
+(at truck-2 city-loc-4)
+(at truck-2 city-loc-5)
+(at truck-2 city-loc-6)
+(at truck-2 city-loc-7)
+(at truck-2 city-loc-8)
+(at truck-2 city-loc-9)
+5
+(capacity truck-1 capacity-0)
+(capacity truck-1 capacity-1)
+(capacity truck-1 capacity-2)
+(capacity truck-1 capacity-3)
+(capacity truck-1 capacity-4)
+5
+(capacity truck-2 capacity-0)
+(capacity truck-2 capacity-1)
+(capacity truck-2 capacity-2)
+(capacity truck-2 capacity-3)
+(capacity truck-2 capacity-4)
+6 2 3 6 6 3 4 2
+4 0 7 1 5 2 1 3 5
+708
+drive truck-1 city-loc-1 city-loc-6
+1 4 0
+1 4 6
+21
+drive truck-1 city-loc-1 city-loc-9
+1 4 0
+1 4 9
+30
+drive truck-1 city-loc-10 city-loc-2
+1 4 1
+1 4 2
+19
+drive truck-1 city-loc-2 city-loc-10
+1 4 2
+1 4 1
+19
+drive truck-1 city-loc-2 city-loc-9
+1 4 2
+1 4 9
+26
+drive truck-1 city-loc-3 city-loc-4
+1 4 3
+1 4 4
+15
+drive truck-1 city-loc-3 city-loc-5
+1 4 3
+1 4 5
+16
+drive truck-1 city-loc-3 city-loc-6
+1 4 3
+1 4 6
+19
+drive truck-1 city-loc-3 city-loc-7
+1 4 3
+1 4 7
+29
+drive truck-1 city-loc-4 city-loc-3
+1 4 4
+1 4 3
+15
+drive truck-1 city-loc-4 city-loc-5
+1 4 4
+1 4 5
+22
+drive truck-1 city-loc-4 city-loc-7
+1 4 4
+1 4 7
+29
+drive truck-1 city-loc-4 city-loc-8
+1 4 4
+1 4 8
+21
+drive truck-1 city-loc-5 city-loc-3
+1 4 5
+1 4 3
+16
+drive truck-1 city-loc-5 city-loc-4
+1 4 5
+1 4 4
+22
+drive truck-1 city-loc-5 city-loc-6
+1 4 5
+1 4 6
+15
+drive truck-1 city-loc-5 city-loc-7
+1 4 5
+1 4 7
+16
+drive truck-1 city-loc-5 city-loc-9
+1 4 5
+1 4 9
+29
+drive truck-1 city-loc-6 city-loc-1
+1 4 6
+1 4 0
+21
+drive truck-1 city-loc-6 city-loc-3
+1 4 6
+1 4 3
+19
+drive truck-1 city-loc-6 city-loc-5
+1 4 6
+1 4 5
+15
+drive truck-1 city-loc-6 city-loc-7
+1 4 6
+1 4 7
+29
+drive truck-1 city-loc-6 city-loc-9
+1 4 6
+1 4 9
+29
+drive truck-1 city-loc-7 city-loc-3
+1 4 7
+1 4 3
+29
+drive truck-1 city-loc-7 city-loc-4
+1 4 7
+1 4 4
+29
+drive truck-1 city-loc-7 city-loc-5
+1 4 7
+1 4 5
+16
+drive truck-1 city-loc-7 city-loc-6
+1 4 7
+1 4 6
+29
+drive truck-1 city-loc-7 city-loc-9
+1 4 7
+1 4 9
+27
+drive truck-1 city-loc-8 city-loc-4
+1 4 8
+1 4 4
+21
+drive truck-1 city-loc-9 city-loc-1
+1 4 9
+1 4 0
+30
+drive truck-1 city-loc-9 city-loc-2
+1 4 9
+1 4 2
+26
+drive truck-1 city-loc-9 city-loc-5
+1 4 9
+1 4 5
+29
+drive truck-1 city-loc-9 city-loc-6
+1 4 9
+1 4 6
+29
+drive truck-1 city-loc-9 city-loc-7
+1 4 9
+1 4 7
+27
+drive truck-2 city-loc-1 city-loc-6
+1 5 0
+1 5 6
+21
+drive truck-2 city-loc-1 city-loc-9
+1 5 0
+1 5 9
+30
+drive truck-2 city-loc-10 city-loc-2
+1 5 1
+1 5 2
+19
+drive truck-2 city-loc-2 city-loc-10
+1 5 2
+1 5 1
+19
+drive truck-2 city-loc-2 city-loc-9
+1 5 2
+1 5 9
+26
+drive truck-2 city-loc-3 city-loc-4
+1 5 3
+1 5 4
+15
+drive truck-2 city-loc-3 city-loc-5
+1 5 3
+1 5 5
+16
+drive truck-2 city-loc-3 city-loc-6
+1 5 3
+1 5 6
+19
+drive truck-2 city-loc-3 city-loc-7
+1 5 3
+1 5 7
+29
+drive truck-2 city-loc-4 city-loc-3
+1 5 4
+1 5 3
+15
+drive truck-2 city-loc-4 city-loc-5
+1 5 4
+1 5 5
+22
+drive truck-2 city-loc-4 city-loc-7
+1 5 4
+1 5 7
+29
+drive truck-2 city-loc-4 city-loc-8
+1 5 4
+1 5 8
+21
+drive truck-2 city-loc-5 city-loc-3
+1 5 5
+1 5 3
+16
+drive truck-2 city-loc-5 city-loc-4
+1 5 5
+1 5 4
+22
+drive truck-2 city-loc-5 city-loc-6
+1 5 5
+1 5 6
+15
+drive truck-2 city-loc-5 city-loc-7
+1 5 5
+1 5 7
+16
+drive truck-2 city-loc-5 city-loc-9
+1 5 5
+1 5 9
+29
+drive truck-2 city-loc-6 city-loc-1
+1 5 6
+1 5 0
+21
+drive truck-2 city-loc-6 city-loc-3
+1 5 6
+1 5 3
+19
+drive truck-2 city-loc-6 city-loc-5
+1 5 6
+1 5 5
+15
+drive truck-2 city-loc-6 city-loc-7
+1 5 6
+1 5 7
+29
+drive truck-2 city-loc-6 city-loc-9
+1 5 6
+1 5 9
+29
+drive truck-2 city-loc-7 city-loc-3
+1 5 7
+1 5 3
+29
+drive truck-2 city-loc-7 city-loc-4
+1 5 7
+1 5 4
+29
+drive truck-2 city-loc-7 city-loc-5
+1 5 7
+1 5 5
+16
+drive truck-2 city-loc-7 city-loc-6
+1 5 7
+1 5 6
+29
+drive truck-2 city-loc-7 city-loc-9
+1 5 7
+1 5 9
+27
+drive truck-2 city-loc-8 city-loc-4
+1 5 8
+1 5 4
+21
+drive truck-2 city-loc-9 city-loc-1
+1 5 9
+1 5 0
+30
+drive truck-2 city-loc-9 city-loc-2
+1 5 9
+1 5 2
+26
+drive truck-2 city-loc-9 city-loc-5
+1 5 9
+1 5 5
+29
+drive truck-2 city-loc-9 city-loc-6
+1 5 9
+1 5 6
+29
+drive truck-2 city-loc-9 city-loc-7
+1 5 9
+1 5 7
+27
+drop truck-1 city-loc-1 package-1 capacity-0 capacity-1
+3 0 10 4 0 6 0
+2 0 0 6 1
+1
+drop truck-1 city-loc-1 package-1 capacity-1 capacity-2
+3 0 10 4 0 6 1
+2 0 0 6 2
+1
+drop truck-1 city-loc-1 package-1 capacity-2 capacity-3
+3 0 10 4 0 6 2
+2 0 0 6 3
+1
+drop truck-1 city-loc-1 package-1 capacity-3 capacity-4
+3 0 10 4 0 6 3
+2 0 0 6 4
+1
+drop truck-1 city-loc-1 package-2 capacity-0 capacity-1
+3 1 10 4 0 6 0
+2 1 0 6 1
+1
+drop truck-1 city-loc-1 package-2 capacity-1 capacity-2
+3 1 10 4 0 6 1
+2 1 0 6 2
+1
+drop truck-1 city-loc-1 package-2 capacity-2 capacity-3
+3 1 10 4 0 6 2
+2 1 0 6 3
+1
+drop truck-1 city-loc-1 package-2 capacity-3 capacity-4
+3 1 10 4 0 6 3
+2 1 0 6 4
+1
+drop truck-1 city-loc-1 package-3 capacity-0 capacity-1
+3 2 10 4 0 6 0
+2 2 0 6 1
+1
+drop truck-1 city-loc-1 package-3 capacity-1 capacity-2
+3 2 10 4 0 6 1
+2 2 0 6 2
+1
+drop truck-1 city-loc-1 package-3 capacity-2 capacity-3
+3 2 10 4 0 6 2
+2 2 0 6 3
+1
+drop truck-1 city-loc-1 package-3 capacity-3 capacity-4
+3 2 10 4 0 6 3
+2 2 0 6 4
+1
+drop truck-1 city-loc-1 package-4 capacity-0 capacity-1
+3 3 10 4 0 6 0
+2 3 0 6 1
+1
+drop truck-1 city-loc-1 package-4 capacity-1 capacity-2
+3 3 10 4 0 6 1
+2 3 0 6 2
+1
+drop truck-1 city-loc-1 package-4 capacity-2 capacity-3
+3 3 10 4 0 6 2
+2 3 0 6 3
+1
+drop truck-1 city-loc-1 package-4 capacity-3 capacity-4
+3 3 10 4 0 6 3
+2 3 0 6 4
+1
+drop truck-1 city-loc-10 package-1 capacity-0 capacity-1
+3 0 10 4 1 6 0
+2 0 1 6 1
+1
+drop truck-1 city-loc-10 package-1 capacity-1 capacity-2
+3 0 10 4 1 6 1
+2 0 1 6 2
+1
+drop truck-1 city-loc-10 package-1 capacity-2 capacity-3
+3 0 10 4 1 6 2
+2 0 1 6 3
+1
+drop truck-1 city-loc-10 package-1 capacity-3 capacity-4
+3 0 10 4 1 6 3
+2 0 1 6 4
+1
+drop truck-1 city-loc-10 package-2 capacity-0 capacity-1
+3 1 10 4 1 6 0
+2 1 1 6 1
+1
+drop truck-1 city-loc-10 package-2 capacity-1 capacity-2
+3 1 10 4 1 6 1
+2 1 1 6 2
+1
+drop truck-1 city-loc-10 package-2 capacity-2 capacity-3
+3 1 10 4 1 6 2
+2 1 1 6 3
+1
+drop truck-1 city-loc-10 package-2 capacity-3 capacity-4
+3 1 10 4 1 6 3
+2 1 1 6 4
+1
+drop truck-1 city-loc-10 package-3 capacity-0 capacity-1
+3 2 10 4 1 6 0
+2 2 1 6 1
+1
+drop truck-1 city-loc-10 package-3 capacity-1 capacity-2
+3 2 10 4 1 6 1
+2 2 1 6 2
+1
+drop truck-1 city-loc-10 package-3 capacity-2 capacity-3
+3 2 10 4 1 6 2
+2 2 1 6 3
+1
+drop truck-1 city-loc-10 package-3 capacity-3 capacity-4
+3 2 10 4 1 6 3
+2 2 1 6 4
+1
+drop truck-1 city-loc-10 package-4 capacity-0 capacity-1
+3 3 10 4 1 6 0
+2 3 1 6 1
+1
+drop truck-1 city-loc-10 package-4 capacity-1 capacity-2
+3 3 10 4 1 6 1
+2 3 1 6 2
+1
+drop truck-1 city-loc-10 package-4 capacity-2 capacity-3
+3 3 10 4 1 6 2
+2 3 1 6 3
+1
+drop truck-1 city-loc-10 package-4 capacity-3 capacity-4
+3 3 10 4 1 6 3
+2 3 1 6 4
+1
+drop truck-1 city-loc-2 package-1 capacity-0 capacity-1
+3 0 10 4 2 6 0
+2 0 2 6 1
+1
+drop truck-1 city-loc-2 package-1 capacity-1 capacity-2
+3 0 10 4 2 6 1
+2 0 2 6 2
+1
+drop truck-1 city-loc-2 package-1 capacity-2 capacity-3
+3 0 10 4 2 6 2
+2 0 2 6 3
+1
+drop truck-1 city-loc-2 package-1 capacity-3 capacity-4
+3 0 10 4 2 6 3
+2 0 2 6 4
+1
+drop truck-1 city-loc-2 package-2 capacity-0 capacity-1
+3 1 10 4 2 6 0
+2 1 2 6 1
+1
+drop truck-1 city-loc-2 package-2 capacity-1 capacity-2
+3 1 10 4 2 6 1
+2 1 2 6 2
+1
+drop truck-1 city-loc-2 package-2 capacity-2 capacity-3
+3 1 10 4 2 6 2
+2 1 2 6 3
+1
+drop truck-1 city-loc-2 package-2 capacity-3 capacity-4
+3 1 10 4 2 6 3
+2 1 2 6 4
+1
+drop truck-1 city-loc-2 package-3 capacity-0 capacity-1
+3 2 10 4 2 6 0
+2 2 2 6 1
+1
+drop truck-1 city-loc-2 package-3 capacity-1 capacity-2
+3 2 10 4 2 6 1
+2 2 2 6 2
+1
+drop truck-1 city-loc-2 package-3 capacity-2 capacity-3
+3 2 10 4 2 6 2
+2 2 2 6 3
+1
+drop truck-1 city-loc-2 package-3 capacity-3 capacity-4
+3 2 10 4 2 6 3
+2 2 2 6 4
+1
+drop truck-1 city-loc-2 package-4 capacity-0 capacity-1
+3 3 10 4 2 6 0
+2 3 2 6 1
+1
+drop truck-1 city-loc-2 package-4 capacity-1 capacity-2
+3 3 10 4 2 6 1
+2 3 2 6 2
+1
+drop truck-1 city-loc-2 package-4 capacity-2 capacity-3
+3 3 10 4 2 6 2
+2 3 2 6 3
+1
+drop truck-1 city-loc-2 package-4 capacity-3 capacity-4
+3 3 10 4 2 6 3
+2 3 2 6 4
+1
+drop truck-1 city-loc-3 package-1 capacity-0 capacity-1
+3 0 10 4 3 6 0
+2 0 3 6 1
+1
+drop truck-1 city-loc-3 package-1 capacity-1 capacity-2
+3 0 10 4 3 6 1
+2 0 3 6 2
+1
+drop truck-1 city-loc-3 package-1 capacity-2 capacity-3
+3 0 10 4 3 6 2
+2 0 3 6 3
+1
+drop truck-1 city-loc-3 package-1 capacity-3 capacity-4
+3 0 10 4 3 6 3
+2 0 3 6 4
+1
+drop truck-1 city-loc-3 package-2 capacity-0 capacity-1
+3 1 10 4 3 6 0
+2 1 3 6 1
+1
+drop truck-1 city-loc-3 package-2 capacity-1 capacity-2
+3 1 10 4 3 6 1
+2 1 3 6 2
+1
+drop truck-1 city-loc-3 package-2 capacity-2 capacity-3
+3 1 10 4 3 6 2
+2 1 3 6 3
+1
+drop truck-1 city-loc-3 package-2 capacity-3 capacity-4
+3 1 10 4 3 6 3
+2 1 3 6 4
+1
+drop truck-1 city-loc-3 package-3 capacity-0 capacity-1
+3 2 10 4 3 6 0
+2 2 3 6 1
+1
+drop truck-1 city-loc-3 package-3 capacity-1 capacity-2
+3 2 10 4 3 6 1
+2 2 3 6 2
+1
+drop truck-1 city-loc-3 package-3 capacity-2 capacity-3
+3 2 10 4 3 6 2
+2 2 3 6 3
+1
+drop truck-1 city-loc-3 package-3 capacity-3 capacity-4
+3 2 10 4 3 6 3
+2 2 3 6 4
+1
+drop truck-1 city-loc-3 package-4 capacity-0 capacity-1
+3 3 10 4 3 6 0
+2 3 3 6 1
+1
+drop truck-1 city-loc-3 package-4 capacity-1 capacity-2
+3 3 10 4 3 6 1
+2 3 3 6 2
+1
+drop truck-1 city-loc-3 package-4 capacity-2 capacity-3
+3 3 10 4 3 6 2
+2 3 3 6 3
+1
+drop truck-1 city-loc-3 package-4 capacity-3 capacity-4
+3 3 10 4 3 6 3
+2 3 3 6 4
+1
+drop truck-1 city-loc-4 package-1 capacity-0 capacity-1
+3 0 10 4 4 6 0
+2 0 4 6 1
+1
+drop truck-1 city-loc-4 package-1 capacity-1 capacity-2
+3 0 10 4 4 6 1
+2 0 4 6 2
+1
+drop truck-1 city-loc-4 package-1 capacity-2 capacity-3
+3 0 10 4 4 6 2
+2 0 4 6 3
+1
+drop truck-1 city-loc-4 package-1 capacity-3 capacity-4
+3 0 10 4 4 6 3
+2 0 4 6 4
+1
+drop truck-1 city-loc-4 package-2 capacity-0 capacity-1
+3 1 10 4 4 6 0
+2 1 4 6 1
+1
+drop truck-1 city-loc-4 package-2 capacity-1 capacity-2
+3 1 10 4 4 6 1
+2 1 4 6 2
+1
+drop truck-1 city-loc-4 package-2 capacity-2 capacity-3
+3 1 10 4 4 6 2
+2 1 4 6 3
+1
+drop truck-1 city-loc-4 package-2 capacity-3 capacity-4
+3 1 10 4 4 6 3
+2 1 4 6 4
+1
+drop truck-1 city-loc-4 package-3 capacity-0 capacity-1
+3 2 10 4 4 6 0
+2 2 4 6 1
+1
+drop truck-1 city-loc-4 package-3 capacity-1 capacity-2
+3 2 10 4 4 6 1
+2 2 4 6 2
+1
+drop truck-1 city-loc-4 package-3 capacity-2 capacity-3
+3 2 10 4 4 6 2
+2 2 4 6 3
+1
+drop truck-1 city-loc-4 package-3 capacity-3 capacity-4
+3 2 10 4 4 6 3
+2 2 4 6 4
+1
+drop truck-1 city-loc-4 package-4 capacity-0 capacity-1
+3 3 10 4 4 6 0
+2 3 4 6 1
+1
+drop truck-1 city-loc-4 package-4 capacity-1 capacity-2
+3 3 10 4 4 6 1
+2 3 4 6 2
+1
+drop truck-1 city-loc-4 package-4 capacity-2 capacity-3
+3 3 10 4 4 6 2
+2 3 4 6 3
+1
+drop truck-1 city-loc-4 package-4 capacity-3 capacity-4
+3 3 10 4 4 6 3
+2 3 4 6 4
+1
+drop truck-1 city-loc-5 package-1 capacity-0 capacity-1
+3 0 10 4 5 6 0
+2 0 5 6 1
+1
+drop truck-1 city-loc-5 package-1 capacity-1 capacity-2
+3 0 10 4 5 6 1
+2 0 5 6 2
+1
+drop truck-1 city-loc-5 package-1 capacity-2 capacity-3
+3 0 10 4 5 6 2
+2 0 5 6 3
+1
+drop truck-1 city-loc-5 package-1 capacity-3 capacity-4
+3 0 10 4 5 6 3
+2 0 5 6 4
+1
+drop truck-1 city-loc-5 package-2 capacity-0 capacity-1
+3 1 10 4 5 6 0
+2 1 5 6 1
+1
+drop truck-1 city-loc-5 package-2 capacity-1 capacity-2
+3 1 10 4 5 6 1
+2 1 5 6 2
+1
+drop truck-1 city-loc-5 package-2 capacity-2 capacity-3
+3 1 10 4 5 6 2
+2 1 5 6 3
+1
+drop truck-1 city-loc-5 package-2 capacity-3 capacity-4
+3 1 10 4 5 6 3
+2 1 5 6 4
+1
+drop truck-1 city-loc-5 package-3 capacity-0 capacity-1
+3 2 10 4 5 6 0
+2 2 5 6 1
+1
+drop truck-1 city-loc-5 package-3 capacity-1 capacity-2
+3 2 10 4 5 6 1
+2 2 5 6 2
+1
+drop truck-1 city-loc-5 package-3 capacity-2 capacity-3
+3 2 10 4 5 6 2
+2 2 5 6 3
+1
+drop truck-1 city-loc-5 package-3 capacity-3 capacity-4
+3 2 10 4 5 6 3
+2 2 5 6 4
+1
+drop truck-1 city-loc-5 package-4 capacity-0 capacity-1
+3 3 10 4 5 6 0
+2 3 5 6 1
+1
+drop truck-1 city-loc-5 package-4 capacity-1 capacity-2
+3 3 10 4 5 6 1
+2 3 5 6 2
+1
+drop truck-1 city-loc-5 package-4 capacity-2 capacity-3
+3 3 10 4 5 6 2
+2 3 5 6 3
+1
+drop truck-1 city-loc-5 package-4 capacity-3 capacity-4
+3 3 10 4 5 6 3
+2 3 5 6 4
+1
+drop truck-1 city-loc-6 package-1 capacity-0 capacity-1
+3 0 10 4 6 6 0
+2 0 6 6 1
+1
+drop truck-1 city-loc-6 package-1 capacity-1 capacity-2
+3 0 10 4 6 6 1
+2 0 6 6 2
+1
+drop truck-1 city-loc-6 package-1 capacity-2 capacity-3
+3 0 10 4 6 6 2
+2 0 6 6 3
+1
+drop truck-1 city-loc-6 package-1 capacity-3 capacity-4
+3 0 10 4 6 6 3
+2 0 6 6 4
+1
+drop truck-1 city-loc-6 package-2 capacity-0 capacity-1
+3 1 10 4 6 6 0
+2 1 6 6 1
+1
+drop truck-1 city-loc-6 package-2 capacity-1 capacity-2
+3 1 10 4 6 6 1
+2 1 6 6 2
+1
+drop truck-1 city-loc-6 package-2 capacity-2 capacity-3
+3 1 10 4 6 6 2
+2 1 6 6 3
+1
+drop truck-1 city-loc-6 package-2 capacity-3 capacity-4
+3 1 10 4 6 6 3
+2 1 6 6 4
+1
+drop truck-1 city-loc-6 package-3 capacity-0 capacity-1
+3 2 10 4 6 6 0
+2 2 6 6 1
+1
+drop truck-1 city-loc-6 package-3 capacity-1 capacity-2
+3 2 10 4 6 6 1
+2 2 6 6 2
+1
+drop truck-1 city-loc-6 package-3 capacity-2 capacity-3
+3 2 10 4 6 6 2
+2 2 6 6 3
+1
+drop truck-1 city-loc-6 package-3 capacity-3 capacity-4
+3 2 10 4 6 6 3
+2 2 6 6 4
+1
+drop truck-1 city-loc-6 package-4 capacity-0 capacity-1
+3 3 10 4 6 6 0
+2 3 6 6 1
+1
+drop truck-1 city-loc-6 package-4 capacity-1 capacity-2
+3 3 10 4 6 6 1
+2 3 6 6 2
+1
+drop truck-1 city-loc-6 package-4 capacity-2 capacity-3
+3 3 10 4 6 6 2
+2 3 6 6 3
+1
+drop truck-1 city-loc-6 package-4 capacity-3 capacity-4
+3 3 10 4 6 6 3
+2 3 6 6 4
+1
+drop truck-1 city-loc-7 package-1 capacity-0 capacity-1
+3 0 10 4 7 6 0
+2 0 7 6 1
+1
+drop truck-1 city-loc-7 package-1 capacity-1 capacity-2
+3 0 10 4 7 6 1
+2 0 7 6 2
+1
+drop truck-1 city-loc-7 package-1 capacity-2 capacity-3
+3 0 10 4 7 6 2
+2 0 7 6 3
+1
+drop truck-1 city-loc-7 package-1 capacity-3 capacity-4
+3 0 10 4 7 6 3
+2 0 7 6 4
+1
+drop truck-1 city-loc-7 package-2 capacity-0 capacity-1
+3 1 10 4 7 6 0
+2 1 7 6 1
+1
+drop truck-1 city-loc-7 package-2 capacity-1 capacity-2
+3 1 10 4 7 6 1
+2 1 7 6 2
+1
+drop truck-1 city-loc-7 package-2 capacity-2 capacity-3
+3 1 10 4 7 6 2
+2 1 7 6 3
+1
+drop truck-1 city-loc-7 package-2 capacity-3 capacity-4
+3 1 10 4 7 6 3
+2 1 7 6 4
+1
+drop truck-1 city-loc-7 package-3 capacity-0 capacity-1
+3 2 10 4 7 6 0
+2 2 7 6 1
+1
+drop truck-1 city-loc-7 package-3 capacity-1 capacity-2
+3 2 10 4 7 6 1
+2 2 7 6 2
+1
+drop truck-1 city-loc-7 package-3 capacity-2 capacity-3
+3 2 10 4 7 6 2
+2 2 7 6 3
+1
+drop truck-1 city-loc-7 package-3 capacity-3 capacity-4
+3 2 10 4 7 6 3
+2 2 7 6 4
+1
+drop truck-1 city-loc-7 package-4 capacity-0 capacity-1
+3 3 10 4 7 6 0
+2 3 7 6 1
+1
+drop truck-1 city-loc-7 package-4 capacity-1 capacity-2
+3 3 10 4 7 6 1
+2 3 7 6 2
+1
+drop truck-1 city-loc-7 package-4 capacity-2 capacity-3
+3 3 10 4 7 6 2
+2 3 7 6 3
+1
+drop truck-1 city-loc-7 package-4 capacity-3 capacity-4
+3 3 10 4 7 6 3
+2 3 7 6 4
+1
+drop truck-1 city-loc-8 package-1 capacity-0 capacity-1
+3 0 10 4 8 6 0
+2 0 8 6 1
+1
+drop truck-1 city-loc-8 package-1 capacity-1 capacity-2
+3 0 10 4 8 6 1
+2 0 8 6 2
+1
+drop truck-1 city-loc-8 package-1 capacity-2 capacity-3
+3 0 10 4 8 6 2
+2 0 8 6 3
+1
+drop truck-1 city-loc-8 package-1 capacity-3 capacity-4
+3 0 10 4 8 6 3
+2 0 8 6 4
+1
+drop truck-1 city-loc-8 package-2 capacity-0 capacity-1
+3 1 10 4 8 6 0
+2 1 8 6 1
+1
+drop truck-1 city-loc-8 package-2 capacity-1 capacity-2
+3 1 10 4 8 6 1
+2 1 8 6 2
+1
+drop truck-1 city-loc-8 package-2 capacity-2 capacity-3
+3 1 10 4 8 6 2
+2 1 8 6 3
+1
+drop truck-1 city-loc-8 package-2 capacity-3 capacity-4
+3 1 10 4 8 6 3
+2 1 8 6 4
+1
+drop truck-1 city-loc-8 package-3 capacity-0 capacity-1
+3 2 10 4 8 6 0
+2 2 8 6 1
+1
+drop truck-1 city-loc-8 package-3 capacity-1 capacity-2
+3 2 10 4 8 6 1
+2 2 8 6 2
+1
+drop truck-1 city-loc-8 package-3 capacity-2 capacity-3
+3 2 10 4 8 6 2
+2 2 8 6 3
+1
+drop truck-1 city-loc-8 package-3 capacity-3 capacity-4
+3 2 10 4 8 6 3
+2 2 8 6 4
+1
+drop truck-1 city-loc-8 package-4 capacity-0 capacity-1
+3 3 10 4 8 6 0
+2 3 8 6 1
+1
+drop truck-1 city-loc-8 package-4 capacity-1 capacity-2
+3 3 10 4 8 6 1
+2 3 8 6 2
+1
+drop truck-1 city-loc-8 package-4 capacity-2 capacity-3
+3 3 10 4 8 6 2
+2 3 8 6 3
+1
+drop truck-1 city-loc-8 package-4 capacity-3 capacity-4
+3 3 10 4 8 6 3
+2 3 8 6 4
+1
+drop truck-1 city-loc-9 package-1 capacity-0 capacity-1
+3 0 10 4 9 6 0
+2 0 9 6 1
+1
+drop truck-1 city-loc-9 package-1 capacity-1 capacity-2
+3 0 10 4 9 6 1
+2 0 9 6 2
+1
+drop truck-1 city-loc-9 package-1 capacity-2 capacity-3
+3 0 10 4 9 6 2
+2 0 9 6 3
+1
+drop truck-1 city-loc-9 package-1 capacity-3 capacity-4
+3 0 10 4 9 6 3
+2 0 9 6 4
+1
+drop truck-1 city-loc-9 package-2 capacity-0 capacity-1
+3 1 10 4 9 6 0
+2 1 9 6 1
+1
+drop truck-1 city-loc-9 package-2 capacity-1 capacity-2
+3 1 10 4 9 6 1
+2 1 9 6 2
+1
+drop truck-1 city-loc-9 package-2 capacity-2 capacity-3
+3 1 10 4 9 6 2
+2 1 9 6 3
+1
+drop truck-1 city-loc-9 package-2 capacity-3 capacity-4
+3 1 10 4 9 6 3
+2 1 9 6 4
+1
+drop truck-1 city-loc-9 package-3 capacity-0 capacity-1
+3 2 10 4 9 6 0
+2 2 9 6 1
+1
+drop truck-1 city-loc-9 package-3 capacity-1 capacity-2
+3 2 10 4 9 6 1
+2 2 9 6 2
+1
+drop truck-1 city-loc-9 package-3 capacity-2 capacity-3
+3 2 10 4 9 6 2
+2 2 9 6 3
+1
+drop truck-1 city-loc-9 package-3 capacity-3 capacity-4
+3 2 10 4 9 6 3
+2 2 9 6 4
+1
+drop truck-1 city-loc-9 package-4 capacity-0 capacity-1
+3 3 10 4 9 6 0
+2 3 9 6 1
+1
+drop truck-1 city-loc-9 package-4 capacity-1 capacity-2
+3 3 10 4 9 6 1
+2 3 9 6 2
+1
+drop truck-1 city-loc-9 package-4 capacity-2 capacity-3
+3 3 10 4 9 6 2
+2 3 9 6 3
+1
+drop truck-1 city-loc-9 package-4 capacity-3 capacity-4
+3 3 10 4 9 6 3
+2 3 9 6 4
+1
+drop truck-2 city-loc-1 package-1 capacity-0 capacity-1
+3 0 11 5 0 7 0
+2 0 0 7 1
+1
+drop truck-2 city-loc-1 package-1 capacity-1 capacity-2
+3 0 11 5 0 7 1
+2 0 0 7 2
+1
+drop truck-2 city-loc-1 package-1 capacity-2 capacity-3
+3 0 11 5 0 7 2
+2 0 0 7 3
+1
+drop truck-2 city-loc-1 package-1 capacity-3 capacity-4
+3 0 11 5 0 7 3
+2 0 0 7 4
+1
+drop truck-2 city-loc-1 package-2 capacity-0 capacity-1
+3 1 11 5 0 7 0
+2 1 0 7 1
+1
+drop truck-2 city-loc-1 package-2 capacity-1 capacity-2
+3 1 11 5 0 7 1
+2 1 0 7 2
+1
+drop truck-2 city-loc-1 package-2 capacity-2 capacity-3
+3 1 11 5 0 7 2
+2 1 0 7 3
+1
+drop truck-2 city-loc-1 package-2 capacity-3 capacity-4
+3 1 11 5 0 7 3
+2 1 0 7 4
+1
+drop truck-2 city-loc-1 package-3 capacity-0 capacity-1
+3 2 11 5 0 7 0
+2 2 0 7 1
+1
+drop truck-2 city-loc-1 package-3 capacity-1 capacity-2
+3 2 11 5 0 7 1
+2 2 0 7 2
+1
+drop truck-2 city-loc-1 package-3 capacity-2 capacity-3
+3 2 11 5 0 7 2
+2 2 0 7 3
+1
+drop truck-2 city-loc-1 package-3 capacity-3 capacity-4
+3 2 11 5 0 7 3
+2 2 0 7 4
+1
+drop truck-2 city-loc-1 package-4 capacity-0 capacity-1
+3 3 11 5 0 7 0
+2 3 0 7 1
+1
+drop truck-2 city-loc-1 package-4 capacity-1 capacity-2
+3 3 11 5 0 7 1
+2 3 0 7 2
+1
+drop truck-2 city-loc-1 package-4 capacity-2 capacity-3
+3 3 11 5 0 7 2
+2 3 0 7 3
+1
+drop truck-2 city-loc-1 package-4 capacity-3 capacity-4
+3 3 11 5 0 7 3
+2 3 0 7 4
+1
+drop truck-2 city-loc-10 package-1 capacity-0 capacity-1
+3 0 11 5 1 7 0
+2 0 1 7 1
+1
+drop truck-2 city-loc-10 package-1 capacity-1 capacity-2
+3 0 11 5 1 7 1
+2 0 1 7 2
+1
+drop truck-2 city-loc-10 package-1 capacity-2 capacity-3
+3 0 11 5 1 7 2
+2 0 1 7 3
+1
+drop truck-2 city-loc-10 package-1 capacity-3 capacity-4
+3 0 11 5 1 7 3
+2 0 1 7 4
+1
+drop truck-2 city-loc-10 package-2 capacity-0 capacity-1
+3 1 11 5 1 7 0
+2 1 1 7 1
+1
+drop truck-2 city-loc-10 package-2 capacity-1 capacity-2
+3 1 11 5 1 7 1
+2 1 1 7 2
+1
+drop truck-2 city-loc-10 package-2 capacity-2 capacity-3
+3 1 11 5 1 7 2
+2 1 1 7 3
+1
+drop truck-2 city-loc-10 package-2 capacity-3 capacity-4
+3 1 11 5 1 7 3
+2 1 1 7 4
+1
+drop truck-2 city-loc-10 package-3 capacity-0 capacity-1
+3 2 11 5 1 7 0
+2 2 1 7 1
+1
+drop truck-2 city-loc-10 package-3 capacity-1 capacity-2
+3 2 11 5 1 7 1
+2 2 1 7 2
+1
+drop truck-2 city-loc-10 package-3 capacity-2 capacity-3
+3 2 11 5 1 7 2
+2 2 1 7 3
+1
+drop truck-2 city-loc-10 package-3 capacity-3 capacity-4
+3 2 11 5 1 7 3
+2 2 1 7 4
+1
+drop truck-2 city-loc-10 package-4 capacity-0 capacity-1
+3 3 11 5 1 7 0
+2 3 1 7 1
+1
+drop truck-2 city-loc-10 package-4 capacity-1 capacity-2
+3 3 11 5 1 7 1
+2 3 1 7 2
+1
+drop truck-2 city-loc-10 package-4 capacity-2 capacity-3
+3 3 11 5 1 7 2
+2 3 1 7 3
+1
+drop truck-2 city-loc-10 package-4 capacity-3 capacity-4
+3 3 11 5 1 7 3
+2 3 1 7 4
+1
+drop truck-2 city-loc-2 package-1 capacity-0 capacity-1
+3 0 11 5 2 7 0
+2 0 2 7 1
+1
+drop truck-2 city-loc-2 package-1 capacity-1 capacity-2
+3 0 11 5 2 7 1
+2 0 2 7 2
+1
+drop truck-2 city-loc-2 package-1 capacity-2 capacity-3
+3 0 11 5 2 7 2
+2 0 2 7 3
+1
+drop truck-2 city-loc-2 package-1 capacity-3 capacity-4
+3 0 11 5 2 7 3
+2 0 2 7 4
+1
+drop truck-2 city-loc-2 package-2 capacity-0 capacity-1
+3 1 11 5 2 7 0
+2 1 2 7 1
+1
+drop truck-2 city-loc-2 package-2 capacity-1 capacity-2
+3 1 11 5 2 7 1
+2 1 2 7 2
+1
+drop truck-2 city-loc-2 package-2 capacity-2 capacity-3
+3 1 11 5 2 7 2
+2 1 2 7 3
+1
+drop truck-2 city-loc-2 package-2 capacity-3 capacity-4
+3 1 11 5 2 7 3
+2 1 2 7 4
+1
+drop truck-2 city-loc-2 package-3 capacity-0 capacity-1
+3 2 11 5 2 7 0
+2 2 2 7 1
+1
+drop truck-2 city-loc-2 package-3 capacity-1 capacity-2
+3 2 11 5 2 7 1
+2 2 2 7 2
+1
+drop truck-2 city-loc-2 package-3 capacity-2 capacity-3
+3 2 11 5 2 7 2
+2 2 2 7 3
+1
+drop truck-2 city-loc-2 package-3 capacity-3 capacity-4
+3 2 11 5 2 7 3
+2 2 2 7 4
+1
+drop truck-2 city-loc-2 package-4 capacity-0 capacity-1
+3 3 11 5 2 7 0
+2 3 2 7 1
+1
+drop truck-2 city-loc-2 package-4 capacity-1 capacity-2
+3 3 11 5 2 7 1
+2 3 2 7 2
+1
+drop truck-2 city-loc-2 package-4 capacity-2 capacity-3
+3 3 11 5 2 7 2
+2 3 2 7 3
+1
+drop truck-2 city-loc-2 package-4 capacity-3 capacity-4
+3 3 11 5 2 7 3
+2 3 2 7 4
+1
+drop truck-2 city-loc-3 package-1 capacity-0 capacity-1
+3 0 11 5 3 7 0
+2 0 3 7 1
+1
+drop truck-2 city-loc-3 package-1 capacity-1 capacity-2
+3 0 11 5 3 7 1
+2 0 3 7 2
+1
+drop truck-2 city-loc-3 package-1 capacity-2 capacity-3
+3 0 11 5 3 7 2
+2 0 3 7 3
+1
+drop truck-2 city-loc-3 package-1 capacity-3 capacity-4
+3 0 11 5 3 7 3
+2 0 3 7 4
+1
+drop truck-2 city-loc-3 package-2 capacity-0 capacity-1
+3 1 11 5 3 7 0
+2 1 3 7 1
+1
+drop truck-2 city-loc-3 package-2 capacity-1 capacity-2
+3 1 11 5 3 7 1
+2 1 3 7 2
+1
+drop truck-2 city-loc-3 package-2 capacity-2 capacity-3
+3 1 11 5 3 7 2
+2 1 3 7 3
+1
+drop truck-2 city-loc-3 package-2 capacity-3 capacity-4
+3 1 11 5 3 7 3
+2 1 3 7 4
+1
+drop truck-2 city-loc-3 package-3 capacity-0 capacity-1
+3 2 11 5 3 7 0
+2 2 3 7 1
+1
+drop truck-2 city-loc-3 package-3 capacity-1 capacity-2
+3 2 11 5 3 7 1
+2 2 3 7 2
+1
+drop truck-2 city-loc-3 package-3 capacity-2 capacity-3
+3 2 11 5 3 7 2
+2 2 3 7 3
+1
+drop truck-2 city-loc-3 package-3 capacity-3 capacity-4
+3 2 11 5 3 7 3
+2 2 3 7 4
+1
+drop truck-2 city-loc-3 package-4 capacity-0 capacity-1
+3 3 11 5 3 7 0
+2 3 3 7 1
+1
+drop truck-2 city-loc-3 package-4 capacity-1 capacity-2
+3 3 11 5 3 7 1
+2 3 3 7 2
+1
+drop truck-2 city-loc-3 package-4 capacity-2 capacity-3
+3 3 11 5 3 7 2
+2 3 3 7 3
+1
+drop truck-2 city-loc-3 package-4 capacity-3 capacity-4
+3 3 11 5 3 7 3
+2 3 3 7 4
+1
+drop truck-2 city-loc-4 package-1 capacity-0 capacity-1
+3 0 11 5 4 7 0
+2 0 4 7 1
+1
+drop truck-2 city-loc-4 package-1 capacity-1 capacity-2
+3 0 11 5 4 7 1
+2 0 4 7 2
+1
+drop truck-2 city-loc-4 package-1 capacity-2 capacity-3
+3 0 11 5 4 7 2
+2 0 4 7 3
+1
+drop truck-2 city-loc-4 package-1 capacity-3 capacity-4
+3 0 11 5 4 7 3
+2 0 4 7 4
+1
+drop truck-2 city-loc-4 package-2 capacity-0 capacity-1
+3 1 11 5 4 7 0
+2 1 4 7 1
+1
+drop truck-2 city-loc-4 package-2 capacity-1 capacity-2
+3 1 11 5 4 7 1
+2 1 4 7 2
+1
+drop truck-2 city-loc-4 package-2 capacity-2 capacity-3
+3 1 11 5 4 7 2
+2 1 4 7 3
+1
+drop truck-2 city-loc-4 package-2 capacity-3 capacity-4
+3 1 11 5 4 7 3
+2 1 4 7 4
+1
+drop truck-2 city-loc-4 package-3 capacity-0 capacity-1
+3 2 11 5 4 7 0
+2 2 4 7 1
+1
+drop truck-2 city-loc-4 package-3 capacity-1 capacity-2
+3 2 11 5 4 7 1
+2 2 4 7 2
+1
+drop truck-2 city-loc-4 package-3 capacity-2 capacity-3
+3 2 11 5 4 7 2
+2 2 4 7 3
+1
+drop truck-2 city-loc-4 package-3 capacity-3 capacity-4
+3 2 11 5 4 7 3
+2 2 4 7 4
+1
+drop truck-2 city-loc-4 package-4 capacity-0 capacity-1
+3 3 11 5 4 7 0
+2 3 4 7 1
+1
+drop truck-2 city-loc-4 package-4 capacity-1 capacity-2
+3 3 11 5 4 7 1
+2 3 4 7 2
+1
+drop truck-2 city-loc-4 package-4 capacity-2 capacity-3
+3 3 11 5 4 7 2
+2 3 4 7 3
+1
+drop truck-2 city-loc-4 package-4 capacity-3 capacity-4
+3 3 11 5 4 7 3
+2 3 4 7 4
+1
+drop truck-2 city-loc-5 package-1 capacity-0 capacity-1
+3 0 11 5 5 7 0
+2 0 5 7 1
+1
+drop truck-2 city-loc-5 package-1 capacity-1 capacity-2
+3 0 11 5 5 7 1
+2 0 5 7 2
+1
+drop truck-2 city-loc-5 package-1 capacity-2 capacity-3
+3 0 11 5 5 7 2
+2 0 5 7 3
+1
+drop truck-2 city-loc-5 package-1 capacity-3 capacity-4
+3 0 11 5 5 7 3
+2 0 5 7 4
+1
+drop truck-2 city-loc-5 package-2 capacity-0 capacity-1
+3 1 11 5 5 7 0
+2 1 5 7 1
+1
+drop truck-2 city-loc-5 package-2 capacity-1 capacity-2
+3 1 11 5 5 7 1
+2 1 5 7 2
+1
+drop truck-2 city-loc-5 package-2 capacity-2 capacity-3
+3 1 11 5 5 7 2
+2 1 5 7 3
+1
+drop truck-2 city-loc-5 package-2 capacity-3 capacity-4
+3 1 11 5 5 7 3
+2 1 5 7 4
+1
+drop truck-2 city-loc-5 package-3 capacity-0 capacity-1
+3 2 11 5 5 7 0
+2 2 5 7 1
+1
+drop truck-2 city-loc-5 package-3 capacity-1 capacity-2
+3 2 11 5 5 7 1
+2 2 5 7 2
+1
+drop truck-2 city-loc-5 package-3 capacity-2 capacity-3
+3 2 11 5 5 7 2
+2 2 5 7 3
+1
+drop truck-2 city-loc-5 package-3 capacity-3 capacity-4
+3 2 11 5 5 7 3
+2 2 5 7 4
+1
+drop truck-2 city-loc-5 package-4 capacity-0 capacity-1
+3 3 11 5 5 7 0
+2 3 5 7 1
+1
+drop truck-2 city-loc-5 package-4 capacity-1 capacity-2
+3 3 11 5 5 7 1
+2 3 5 7 2
+1
+drop truck-2 city-loc-5 package-4 capacity-2 capacity-3
+3 3 11 5 5 7 2
+2 3 5 7 3
+1
+drop truck-2 city-loc-5 package-4 capacity-3 capacity-4
+3 3 11 5 5 7 3
+2 3 5 7 4
+1
+drop truck-2 city-loc-6 package-1 capacity-0 capacity-1
+3 0 11 5 6 7 0
+2 0 6 7 1
+1
+drop truck-2 city-loc-6 package-1 capacity-1 capacity-2
+3 0 11 5 6 7 1
+2 0 6 7 2
+1
+drop truck-2 city-loc-6 package-1 capacity-2 capacity-3
+3 0 11 5 6 7 2
+2 0 6 7 3
+1
+drop truck-2 city-loc-6 package-1 capacity-3 capacity-4
+3 0 11 5 6 7 3
+2 0 6 7 4
+1
+drop truck-2 city-loc-6 package-2 capacity-0 capacity-1
+3 1 11 5 6 7 0
+2 1 6 7 1
+1
+drop truck-2 city-loc-6 package-2 capacity-1 capacity-2
+3 1 11 5 6 7 1
+2 1 6 7 2
+1
+drop truck-2 city-loc-6 package-2 capacity-2 capacity-3
+3 1 11 5 6 7 2
+2 1 6 7 3
+1
+drop truck-2 city-loc-6 package-2 capacity-3 capacity-4
+3 1 11 5 6 7 3
+2 1 6 7 4
+1
+drop truck-2 city-loc-6 package-3 capacity-0 capacity-1
+3 2 11 5 6 7 0
+2 2 6 7 1
+1
+drop truck-2 city-loc-6 package-3 capacity-1 capacity-2
+3 2 11 5 6 7 1
+2 2 6 7 2
+1
+drop truck-2 city-loc-6 package-3 capacity-2 capacity-3
+3 2 11 5 6 7 2
+2 2 6 7 3
+1
+drop truck-2 city-loc-6 package-3 capacity-3 capacity-4
+3 2 11 5 6 7 3
+2 2 6 7 4
+1
+drop truck-2 city-loc-6 package-4 capacity-0 capacity-1
+3 3 11 5 6 7 0
+2 3 6 7 1
+1
+drop truck-2 city-loc-6 package-4 capacity-1 capacity-2
+3 3 11 5 6 7 1
+2 3 6 7 2
+1
+drop truck-2 city-loc-6 package-4 capacity-2 capacity-3
+3 3 11 5 6 7 2
+2 3 6 7 3
+1
+drop truck-2 city-loc-6 package-4 capacity-3 capacity-4
+3 3 11 5 6 7 3
+2 3 6 7 4
+1
+drop truck-2 city-loc-7 package-1 capacity-0 capacity-1
+3 0 11 5 7 7 0
+2 0 7 7 1
+1
+drop truck-2 city-loc-7 package-1 capacity-1 capacity-2
+3 0 11 5 7 7 1
+2 0 7 7 2
+1
+drop truck-2 city-loc-7 package-1 capacity-2 capacity-3
+3 0 11 5 7 7 2
+2 0 7 7 3
+1
+drop truck-2 city-loc-7 package-1 capacity-3 capacity-4
+3 0 11 5 7 7 3
+2 0 7 7 4
+1
+drop truck-2 city-loc-7 package-2 capacity-0 capacity-1
+3 1 11 5 7 7 0
+2 1 7 7 1
+1
+drop truck-2 city-loc-7 package-2 capacity-1 capacity-2
+3 1 11 5 7 7 1
+2 1 7 7 2
+1
+drop truck-2 city-loc-7 package-2 capacity-2 capacity-3
+3 1 11 5 7 7 2
+2 1 7 7 3
+1
+drop truck-2 city-loc-7 package-2 capacity-3 capacity-4
+3 1 11 5 7 7 3
+2 1 7 7 4
+1
+drop truck-2 city-loc-7 package-3 capacity-0 capacity-1
+3 2 11 5 7 7 0
+2 2 7 7 1
+1
+drop truck-2 city-loc-7 package-3 capacity-1 capacity-2
+3 2 11 5 7 7 1
+2 2 7 7 2
+1
+drop truck-2 city-loc-7 package-3 capacity-2 capacity-3
+3 2 11 5 7 7 2
+2 2 7 7 3
+1
+drop truck-2 city-loc-7 package-3 capacity-3 capacity-4
+3 2 11 5 7 7 3
+2 2 7 7 4
+1
+drop truck-2 city-loc-7 package-4 capacity-0 capacity-1
+3 3 11 5 7 7 0
+2 3 7 7 1
+1
+drop truck-2 city-loc-7 package-4 capacity-1 capacity-2
+3 3 11 5 7 7 1
+2 3 7 7 2
+1
+drop truck-2 city-loc-7 package-4 capacity-2 capacity-3
+3 3 11 5 7 7 2
+2 3 7 7 3
+1
+drop truck-2 city-loc-7 package-4 capacity-3 capacity-4
+3 3 11 5 7 7 3
+2 3 7 7 4
+1
+drop truck-2 city-loc-8 package-1 capacity-0 capacity-1
+3 0 11 5 8 7 0
+2 0 8 7 1
+1
+drop truck-2 city-loc-8 package-1 capacity-1 capacity-2
+3 0 11 5 8 7 1
+2 0 8 7 2
+1
+drop truck-2 city-loc-8 package-1 capacity-2 capacity-3
+3 0 11 5 8 7 2
+2 0 8 7 3
+1
+drop truck-2 city-loc-8 package-1 capacity-3 capacity-4
+3 0 11 5 8 7 3
+2 0 8 7 4
+1
+drop truck-2 city-loc-8 package-2 capacity-0 capacity-1
+3 1 11 5 8 7 0
+2 1 8 7 1
+1
+drop truck-2 city-loc-8 package-2 capacity-1 capacity-2
+3 1 11 5 8 7 1
+2 1 8 7 2
+1
+drop truck-2 city-loc-8 package-2 capacity-2 capacity-3
+3 1 11 5 8 7 2
+2 1 8 7 3
+1
+drop truck-2 city-loc-8 package-2 capacity-3 capacity-4
+3 1 11 5 8 7 3
+2 1 8 7 4
+1
+drop truck-2 city-loc-8 package-3 capacity-0 capacity-1
+3 2 11 5 8 7 0
+2 2 8 7 1
+1
+drop truck-2 city-loc-8 package-3 capacity-1 capacity-2
+3 2 11 5 8 7 1
+2 2 8 7 2
+1
+drop truck-2 city-loc-8 package-3 capacity-2 capacity-3
+3 2 11 5 8 7 2
+2 2 8 7 3
+1
+drop truck-2 city-loc-8 package-3 capacity-3 capacity-4
+3 2 11 5 8 7 3
+2 2 8 7 4
+1
+drop truck-2 city-loc-8 package-4 capacity-0 capacity-1
+3 3 11 5 8 7 0
+2 3 8 7 1
+1
+drop truck-2 city-loc-8 package-4 capacity-1 capacity-2
+3 3 11 5 8 7 1
+2 3 8 7 2
+1
+drop truck-2 city-loc-8 package-4 capacity-2 capacity-3
+3 3 11 5 8 7 2
+2 3 8 7 3
+1
+drop truck-2 city-loc-8 package-4 capacity-3 capacity-4
+3 3 11 5 8 7 3
+2 3 8 7 4
+1
+drop truck-2 city-loc-9 package-1 capacity-0 capacity-1
+3 0 11 5 9 7 0
+2 0 9 7 1
+1
+drop truck-2 city-loc-9 package-1 capacity-1 capacity-2
+3 0 11 5 9 7 1
+2 0 9 7 2
+1
+drop truck-2 city-loc-9 package-1 capacity-2 capacity-3
+3 0 11 5 9 7 2
+2 0 9 7 3
+1
+drop truck-2 city-loc-9 package-1 capacity-3 capacity-4
+3 0 11 5 9 7 3
+2 0 9 7 4
+1
+drop truck-2 city-loc-9 package-2 capacity-0 capacity-1
+3 1 11 5 9 7 0
+2 1 9 7 1
+1
+drop truck-2 city-loc-9 package-2 capacity-1 capacity-2
+3 1 11 5 9 7 1
+2 1 9 7 2
+1
+drop truck-2 city-loc-9 package-2 capacity-2 capacity-3
+3 1 11 5 9 7 2
+2 1 9 7 3
+1
+drop truck-2 city-loc-9 package-2 capacity-3 capacity-4
+3 1 11 5 9 7 3
+2 1 9 7 4
+1
+drop truck-2 city-loc-9 package-3 capacity-0 capacity-1
+3 2 11 5 9 7 0
+2 2 9 7 1
+1
+drop truck-2 city-loc-9 package-3 capacity-1 capacity-2
+3 2 11 5 9 7 1
+2 2 9 7 2
+1
+drop truck-2 city-loc-9 package-3 capacity-2 capacity-3
+3 2 11 5 9 7 2
+2 2 9 7 3
+1
+drop truck-2 city-loc-9 package-3 capacity-3 capacity-4
+3 2 11 5 9 7 3
+2 2 9 7 4
+1
+drop truck-2 city-loc-9 package-4 capacity-0 capacity-1
+3 3 11 5 9 7 0
+2 3 9 7 1
+1
+drop truck-2 city-loc-9 package-4 capacity-1 capacity-2
+3 3 11 5 9 7 1
+2 3 9 7 2
+1
+drop truck-2 city-loc-9 package-4 capacity-2 capacity-3
+3 3 11 5 9 7 2
+2 3 9 7 3
+1
+drop truck-2 city-loc-9 package-4 capacity-3 capacity-4
+3 3 11 5 9 7 3
+2 3 9 7 4
+1
+pick-up truck-1 city-loc-1 package-1 capacity-0 capacity-1
+3 0 0 4 0 6 1
+2 0 10 6 0
+1
+pick-up truck-1 city-loc-1 package-1 capacity-1 capacity-2
+3 0 0 4 0 6 2
+2 0 10 6 1
+1
+pick-up truck-1 city-loc-1 package-1 capacity-2 capacity-3
+3 0 0 4 0 6 3
+2 0 10 6 2
+1
+pick-up truck-1 city-loc-1 package-1 capacity-3 capacity-4
+3 0 0 4 0 6 4
+2 0 10 6 3
+1
+pick-up truck-1 city-loc-1 package-2 capacity-0 capacity-1
+3 1 0 4 0 6 1
+2 1 10 6 0
+1
+pick-up truck-1 city-loc-1 package-2 capacity-1 capacity-2
+3 1 0 4 0 6 2
+2 1 10 6 1
+1
+pick-up truck-1 city-loc-1 package-2 capacity-2 capacity-3
+3 1 0 4 0 6 3
+2 1 10 6 2
+1
+pick-up truck-1 city-loc-1 package-2 capacity-3 capacity-4
+3 1 0 4 0 6 4
+2 1 10 6 3
+1
+pick-up truck-1 city-loc-1 package-3 capacity-0 capacity-1
+3 2 0 4 0 6 1
+2 2 10 6 0
+1
+pick-up truck-1 city-loc-1 package-3 capacity-1 capacity-2
+3 2 0 4 0 6 2
+2 2 10 6 1
+1
+pick-up truck-1 city-loc-1 package-3 capacity-2 capacity-3
+3 2 0 4 0 6 3
+2 2 10 6 2
+1
+pick-up truck-1 city-loc-1 package-3 capacity-3 capacity-4
+3 2 0 4 0 6 4
+2 2 10 6 3
+1
+pick-up truck-1 city-loc-1 package-4 capacity-0 capacity-1
+3 3 0 4 0 6 1
+2 3 10 6 0
+1
+pick-up truck-1 city-loc-1 package-4 capacity-1 capacity-2
+3 3 0 4 0 6 2
+2 3 10 6 1
+1
+pick-up truck-1 city-loc-1 package-4 capacity-2 capacity-3
+3 3 0 4 0 6 3
+2 3 10 6 2
+1
+pick-up truck-1 city-loc-1 package-4 capacity-3 capacity-4
+3 3 0 4 0 6 4
+2 3 10 6 3
+1
+pick-up truck-1 city-loc-10 package-1 capacity-0 capacity-1
+3 0 1 4 1 6 1
+2 0 10 6 0
+1
+pick-up truck-1 city-loc-10 package-1 capacity-1 capacity-2
+3 0 1 4 1 6 2
+2 0 10 6 1
+1
+pick-up truck-1 city-loc-10 package-1 capacity-2 capacity-3
+3 0 1 4 1 6 3
+2 0 10 6 2
+1
+pick-up truck-1 city-loc-10 package-1 capacity-3 capacity-4
+3 0 1 4 1 6 4
+2 0 10 6 3
+1
+pick-up truck-1 city-loc-10 package-2 capacity-0 capacity-1
+3 1 1 4 1 6 1
+2 1 10 6 0
+1
+pick-up truck-1 city-loc-10 package-2 capacity-1 capacity-2
+3 1 1 4 1 6 2
+2 1 10 6 1
+1
+pick-up truck-1 city-loc-10 package-2 capacity-2 capacity-3
+3 1 1 4 1 6 3
+2 1 10 6 2
+1
+pick-up truck-1 city-loc-10 package-2 capacity-3 capacity-4
+3 1 1 4 1 6 4
+2 1 10 6 3
+1
+pick-up truck-1 city-loc-10 package-3 capacity-0 capacity-1
+3 2 1 4 1 6 1
+2 2 10 6 0
+1
+pick-up truck-1 city-loc-10 package-3 capacity-1 capacity-2
+3 2 1 4 1 6 2
+2 2 10 6 1
+1
+pick-up truck-1 city-loc-10 package-3 capacity-2 capacity-3
+3 2 1 4 1 6 3
+2 2 10 6 2
+1
+pick-up truck-1 city-loc-10 package-3 capacity-3 capacity-4
+3 2 1 4 1 6 4
+2 2 10 6 3
+1
+pick-up truck-1 city-loc-10 package-4 capacity-0 capacity-1
+3 3 1 4 1 6 1
+2 3 10 6 0
+1
+pick-up truck-1 city-loc-10 package-4 capacity-1 capacity-2
+3 3 1 4 1 6 2
+2 3 10 6 1
+1
+pick-up truck-1 city-loc-10 package-4 capacity-2 capacity-3
+3 3 1 4 1 6 3
+2 3 10 6 2
+1
+pick-up truck-1 city-loc-10 package-4 capacity-3 capacity-4
+3 3 1 4 1 6 4
+2 3 10 6 3
+1
+pick-up truck-1 city-loc-2 package-1 capacity-0 capacity-1
+3 0 2 4 2 6 1
+2 0 10 6 0
+1
+pick-up truck-1 city-loc-2 package-1 capacity-1 capacity-2
+3 0 2 4 2 6 2
+2 0 10 6 1
+1
+pick-up truck-1 city-loc-2 package-1 capacity-2 capacity-3
+3 0 2 4 2 6 3
+2 0 10 6 2
+1
+pick-up truck-1 city-loc-2 package-1 capacity-3 capacity-4
+3 0 2 4 2 6 4
+2 0 10 6 3
+1
+pick-up truck-1 city-loc-2 package-2 capacity-0 capacity-1
+3 1 2 4 2 6 1
+2 1 10 6 0
+1
+pick-up truck-1 city-loc-2 package-2 capacity-1 capacity-2
+3 1 2 4 2 6 2
+2 1 10 6 1
+1
+pick-up truck-1 city-loc-2 package-2 capacity-2 capacity-3
+3 1 2 4 2 6 3
+2 1 10 6 2
+1
+pick-up truck-1 city-loc-2 package-2 capacity-3 capacity-4
+3 1 2 4 2 6 4
+2 1 10 6 3
+1
+pick-up truck-1 city-loc-2 package-3 capacity-0 capacity-1
+3 2 2 4 2 6 1
+2 2 10 6 0
+1
+pick-up truck-1 city-loc-2 package-3 capacity-1 capacity-2
+3 2 2 4 2 6 2
+2 2 10 6 1
+1
+pick-up truck-1 city-loc-2 package-3 capacity-2 capacity-3
+3 2 2 4 2 6 3
+2 2 10 6 2
+1
+pick-up truck-1 city-loc-2 package-3 capacity-3 capacity-4
+3 2 2 4 2 6 4
+2 2 10 6 3
+1
+pick-up truck-1 city-loc-2 package-4 capacity-0 capacity-1
+3 3 2 4 2 6 1
+2 3 10 6 0
+1
+pick-up truck-1 city-loc-2 package-4 capacity-1 capacity-2
+3 3 2 4 2 6 2
+2 3 10 6 1
+1
+pick-up truck-1 city-loc-2 package-4 capacity-2 capacity-3
+3 3 2 4 2 6 3
+2 3 10 6 2
+1
+pick-up truck-1 city-loc-2 package-4 capacity-3 capacity-4
+3 3 2 4 2 6 4
+2 3 10 6 3
+1
+pick-up truck-1 city-loc-3 package-1 capacity-0 capacity-1
+3 0 3 4 3 6 1
+2 0 10 6 0
+1
+pick-up truck-1 city-loc-3 package-1 capacity-1 capacity-2
+3 0 3 4 3 6 2
+2 0 10 6 1
+1
+pick-up truck-1 city-loc-3 package-1 capacity-2 capacity-3
+3 0 3 4 3 6 3
+2 0 10 6 2
+1
+pick-up truck-1 city-loc-3 package-1 capacity-3 capacity-4
+3 0 3 4 3 6 4
+2 0 10 6 3
+1
+pick-up truck-1 city-loc-3 package-2 capacity-0 capacity-1
+3 1 3 4 3 6 1
+2 1 10 6 0
+1
+pick-up truck-1 city-loc-3 package-2 capacity-1 capacity-2
+3 1 3 4 3 6 2
+2 1 10 6 1
+1
+pick-up truck-1 city-loc-3 package-2 capacity-2 capacity-3
+3 1 3 4 3 6 3
+2 1 10 6 2
+1
+pick-up truck-1 city-loc-3 package-2 capacity-3 capacity-4
+3 1 3 4 3 6 4
+2 1 10 6 3
+1
+pick-up truck-1 city-loc-3 package-3 capacity-0 capacity-1
+3 2 3 4 3 6 1
+2 2 10 6 0
+1
+pick-up truck-1 city-loc-3 package-3 capacity-1 capacity-2
+3 2 3 4 3 6 2
+2 2 10 6 1
+1
+pick-up truck-1 city-loc-3 package-3 capacity-2 capacity-3
+3 2 3 4 3 6 3
+2 2 10 6 2
+1
+pick-up truck-1 city-loc-3 package-3 capacity-3 capacity-4
+3 2 3 4 3 6 4
+2 2 10 6 3
+1
+pick-up truck-1 city-loc-3 package-4 capacity-0 capacity-1
+3 3 3 4 3 6 1
+2 3 10 6 0
+1
+pick-up truck-1 city-loc-3 package-4 capacity-1 capacity-2
+3 3 3 4 3 6 2
+2 3 10 6 1
+1
+pick-up truck-1 city-loc-3 package-4 capacity-2 capacity-3
+3 3 3 4 3 6 3
+2 3 10 6 2
+1
+pick-up truck-1 city-loc-3 package-4 capacity-3 capacity-4
+3 3 3 4 3 6 4
+2 3 10 6 3
+1
+pick-up truck-1 city-loc-4 package-1 capacity-0 capacity-1
+3 0 4 4 4 6 1
+2 0 10 6 0
+1
+pick-up truck-1 city-loc-4 package-1 capacity-1 capacity-2
+3 0 4 4 4 6 2
+2 0 10 6 1
+1
+pick-up truck-1 city-loc-4 package-1 capacity-2 capacity-3
+3 0 4 4 4 6 3
+2 0 10 6 2
+1
+pick-up truck-1 city-loc-4 package-1 capacity-3 capacity-4
+3 0 4 4 4 6 4
+2 0 10 6 3
+1
+pick-up truck-1 city-loc-4 package-2 capacity-0 capacity-1
+3 1 4 4 4 6 1
+2 1 10 6 0
+1
+pick-up truck-1 city-loc-4 package-2 capacity-1 capacity-2
+3 1 4 4 4 6 2
+2 1 10 6 1
+1
+pick-up truck-1 city-loc-4 package-2 capacity-2 capacity-3
+3 1 4 4 4 6 3
+2 1 10 6 2
+1
+pick-up truck-1 city-loc-4 package-2 capacity-3 capacity-4
+3 1 4 4 4 6 4
+2 1 10 6 3
+1
+pick-up truck-1 city-loc-4 package-3 capacity-0 capacity-1
+3 2 4 4 4 6 1
+2 2 10 6 0
+1
+pick-up truck-1 city-loc-4 package-3 capacity-1 capacity-2
+3 2 4 4 4 6 2
+2 2 10 6 1
+1
+pick-up truck-1 city-loc-4 package-3 capacity-2 capacity-3
+3 2 4 4 4 6 3
+2 2 10 6 2
+1
+pick-up truck-1 city-loc-4 package-3 capacity-3 capacity-4
+3 2 4 4 4 6 4
+2 2 10 6 3
+1
+pick-up truck-1 city-loc-4 package-4 capacity-0 capacity-1
+3 3 4 4 4 6 1
+2 3 10 6 0
+1
+pick-up truck-1 city-loc-4 package-4 capacity-1 capacity-2
+3 3 4 4 4 6 2
+2 3 10 6 1
+1
+pick-up truck-1 city-loc-4 package-4 capacity-2 capacity-3
+3 3 4 4 4 6 3
+2 3 10 6 2
+1
+pick-up truck-1 city-loc-4 package-4 capacity-3 capacity-4
+3 3 4 4 4 6 4
+2 3 10 6 3
+1
+pick-up truck-1 city-loc-5 package-1 capacity-0 capacity-1
+3 0 5 4 5 6 1
+2 0 10 6 0
+1
+pick-up truck-1 city-loc-5 package-1 capacity-1 capacity-2
+3 0 5 4 5 6 2
+2 0 10 6 1
+1
+pick-up truck-1 city-loc-5 package-1 capacity-2 capacity-3
+3 0 5 4 5 6 3
+2 0 10 6 2
+1
+pick-up truck-1 city-loc-5 package-1 capacity-3 capacity-4
+3 0 5 4 5 6 4
+2 0 10 6 3
+1
+pick-up truck-1 city-loc-5 package-2 capacity-0 capacity-1
+3 1 5 4 5 6 1
+2 1 10 6 0
+1
+pick-up truck-1 city-loc-5 package-2 capacity-1 capacity-2
+3 1 5 4 5 6 2
+2 1 10 6 1
+1
+pick-up truck-1 city-loc-5 package-2 capacity-2 capacity-3
+3 1 5 4 5 6 3
+2 1 10 6 2
+1
+pick-up truck-1 city-loc-5 package-2 capacity-3 capacity-4
+3 1 5 4 5 6 4
+2 1 10 6 3
+1
+pick-up truck-1 city-loc-5 package-3 capacity-0 capacity-1
+3 2 5 4 5 6 1
+2 2 10 6 0
+1
+pick-up truck-1 city-loc-5 package-3 capacity-1 capacity-2
+3 2 5 4 5 6 2
+2 2 10 6 1
+1
+pick-up truck-1 city-loc-5 package-3 capacity-2 capacity-3
+3 2 5 4 5 6 3
+2 2 10 6 2
+1
+pick-up truck-1 city-loc-5 package-3 capacity-3 capacity-4
+3 2 5 4 5 6 4
+2 2 10 6 3
+1
+pick-up truck-1 city-loc-5 package-4 capacity-0 capacity-1
+3 3 5 4 5 6 1
+2 3 10 6 0
+1
+pick-up truck-1 city-loc-5 package-4 capacity-1 capacity-2
+3 3 5 4 5 6 2
+2 3 10 6 1
+1
+pick-up truck-1 city-loc-5 package-4 capacity-2 capacity-3
+3 3 5 4 5 6 3
+2 3 10 6 2
+1
+pick-up truck-1 city-loc-5 package-4 capacity-3 capacity-4
+3 3 5 4 5 6 4
+2 3 10 6 3
+1
+pick-up truck-1 city-loc-6 package-1 capacity-0 capacity-1
+3 0 6 4 6 6 1
+2 0 10 6 0
+1
+pick-up truck-1 city-loc-6 package-1 capacity-1 capacity-2
+3 0 6 4 6 6 2
+2 0 10 6 1
+1
+pick-up truck-1 city-loc-6 package-1 capacity-2 capacity-3
+3 0 6 4 6 6 3
+2 0 10 6 2
+1
+pick-up truck-1 city-loc-6 package-1 capacity-3 capacity-4
+3 0 6 4 6 6 4
+2 0 10 6 3
+1
+pick-up truck-1 city-loc-6 package-2 capacity-0 capacity-1
+3 1 6 4 6 6 1
+2 1 10 6 0
+1
+pick-up truck-1 city-loc-6 package-2 capacity-1 capacity-2
+3 1 6 4 6 6 2
+2 1 10 6 1
+1
+pick-up truck-1 city-loc-6 package-2 capacity-2 capacity-3
+3 1 6 4 6 6 3
+2 1 10 6 2
+1
+pick-up truck-1 city-loc-6 package-2 capacity-3 capacity-4
+3 1 6 4 6 6 4
+2 1 10 6 3
+1
+pick-up truck-1 city-loc-6 package-3 capacity-0 capacity-1
+3 2 6 4 6 6 1
+2 2 10 6 0
+1
+pick-up truck-1 city-loc-6 package-3 capacity-1 capacity-2
+3 2 6 4 6 6 2
+2 2 10 6 1
+1
+pick-up truck-1 city-loc-6 package-3 capacity-2 capacity-3
+3 2 6 4 6 6 3
+2 2 10 6 2
+1
+pick-up truck-1 city-loc-6 package-3 capacity-3 capacity-4
+3 2 6 4 6 6 4
+2 2 10 6 3
+1
+pick-up truck-1 city-loc-6 package-4 capacity-0 capacity-1
+3 3 6 4 6 6 1
+2 3 10 6 0
+1
+pick-up truck-1 city-loc-6 package-4 capacity-1 capacity-2
+3 3 6 4 6 6 2
+2 3 10 6 1
+1
+pick-up truck-1 city-loc-6 package-4 capacity-2 capacity-3
+3 3 6 4 6 6 3
+2 3 10 6 2
+1
+pick-up truck-1 city-loc-6 package-4 capacity-3 capacity-4
+3 3 6 4 6 6 4
+2 3 10 6 3
+1
+pick-up truck-1 city-loc-7 package-1 capacity-0 capacity-1
+3 0 7 4 7 6 1
+2 0 10 6 0
+1
+pick-up truck-1 city-loc-7 package-1 capacity-1 capacity-2
+3 0 7 4 7 6 2
+2 0 10 6 1
+1
+pick-up truck-1 city-loc-7 package-1 capacity-2 capacity-3
+3 0 7 4 7 6 3
+2 0 10 6 2
+1
+pick-up truck-1 city-loc-7 package-1 capacity-3 capacity-4
+3 0 7 4 7 6 4
+2 0 10 6 3
+1
+pick-up truck-1 city-loc-7 package-2 capacity-0 capacity-1
+3 1 7 4 7 6 1
+2 1 10 6 0
+1
+pick-up truck-1 city-loc-7 package-2 capacity-1 capacity-2
+3 1 7 4 7 6 2
+2 1 10 6 1
+1
+pick-up truck-1 city-loc-7 package-2 capacity-2 capacity-3
+3 1 7 4 7 6 3
+2 1 10 6 2
+1
+pick-up truck-1 city-loc-7 package-2 capacity-3 capacity-4
+3 1 7 4 7 6 4
+2 1 10 6 3
+1
+pick-up truck-1 city-loc-7 package-3 capacity-0 capacity-1
+3 2 7 4 7 6 1
+2 2 10 6 0
+1
+pick-up truck-1 city-loc-7 package-3 capacity-1 capacity-2
+3 2 7 4 7 6 2
+2 2 10 6 1
+1
+pick-up truck-1 city-loc-7 package-3 capacity-2 capacity-3
+3 2 7 4 7 6 3
+2 2 10 6 2
+1
+pick-up truck-1 city-loc-7 package-3 capacity-3 capacity-4
+3 2 7 4 7 6 4
+2 2 10 6 3
+1
+pick-up truck-1 city-loc-7 package-4 capacity-0 capacity-1
+3 3 7 4 7 6 1
+2 3 10 6 0
+1
+pick-up truck-1 city-loc-7 package-4 capacity-1 capacity-2
+3 3 7 4 7 6 2
+2 3 10 6 1
+1
+pick-up truck-1 city-loc-7 package-4 capacity-2 capacity-3
+3 3 7 4 7 6 3
+2 3 10 6 2
+1
+pick-up truck-1 city-loc-7 package-4 capacity-3 capacity-4
+3 3 7 4 7 6 4
+2 3 10 6 3
+1
+pick-up truck-1 city-loc-8 package-1 capacity-0 capacity-1
+3 0 8 4 8 6 1
+2 0 10 6 0
+1
+pick-up truck-1 city-loc-8 package-1 capacity-1 capacity-2
+3 0 8 4 8 6 2
+2 0 10 6 1
+1
+pick-up truck-1 city-loc-8 package-1 capacity-2 capacity-3
+3 0 8 4 8 6 3
+2 0 10 6 2
+1
+pick-up truck-1 city-loc-8 package-1 capacity-3 capacity-4
+3 0 8 4 8 6 4
+2 0 10 6 3
+1
+pick-up truck-1 city-loc-8 package-2 capacity-0 capacity-1
+3 1 8 4 8 6 1
+2 1 10 6 0
+1
+pick-up truck-1 city-loc-8 package-2 capacity-1 capacity-2
+3 1 8 4 8 6 2
+2 1 10 6 1
+1
+pick-up truck-1 city-loc-8 package-2 capacity-2 capacity-3
+3 1 8 4 8 6 3
+2 1 10 6 2
+1
+pick-up truck-1 city-loc-8 package-2 capacity-3 capacity-4
+3 1 8 4 8 6 4
+2 1 10 6 3
+1
+pick-up truck-1 city-loc-8 package-3 capacity-0 capacity-1
+3 2 8 4 8 6 1
+2 2 10 6 0
+1
+pick-up truck-1 city-loc-8 package-3 capacity-1 capacity-2
+3 2 8 4 8 6 2
+2 2 10 6 1
+1
+pick-up truck-1 city-loc-8 package-3 capacity-2 capacity-3
+3 2 8 4 8 6 3
+2 2 10 6 2
+1
+pick-up truck-1 city-loc-8 package-3 capacity-3 capacity-4
+3 2 8 4 8 6 4
+2 2 10 6 3
+1
+pick-up truck-1 city-loc-8 package-4 capacity-0 capacity-1
+3 3 8 4 8 6 1
+2 3 10 6 0
+1
+pick-up truck-1 city-loc-8 package-4 capacity-1 capacity-2
+3 3 8 4 8 6 2
+2 3 10 6 1
+1
+pick-up truck-1 city-loc-8 package-4 capacity-2 capacity-3
+3 3 8 4 8 6 3
+2 3 10 6 2
+1
+pick-up truck-1 city-loc-8 package-4 capacity-3 capacity-4
+3 3 8 4 8 6 4
+2 3 10 6 3
+1
+pick-up truck-1 city-loc-9 package-1 capacity-0 capacity-1
+3 0 9 4 9 6 1
+2 0 10 6 0
+1
+pick-up truck-1 city-loc-9 package-1 capacity-1 capacity-2
+3 0 9 4 9 6 2
+2 0 10 6 1
+1
+pick-up truck-1 city-loc-9 package-1 capacity-2 capacity-3
+3 0 9 4 9 6 3
+2 0 10 6 2
+1
+pick-up truck-1 city-loc-9 package-1 capacity-3 capacity-4
+3 0 9 4 9 6 4
+2 0 10 6 3
+1
+pick-up truck-1 city-loc-9 package-2 capacity-0 capacity-1
+3 1 9 4 9 6 1
+2 1 10 6 0
+1
+pick-up truck-1 city-loc-9 package-2 capacity-1 capacity-2
+3 1 9 4 9 6 2
+2 1 10 6 1
+1
+pick-up truck-1 city-loc-9 package-2 capacity-2 capacity-3
+3 1 9 4 9 6 3
+2 1 10 6 2
+1
+pick-up truck-1 city-loc-9 package-2 capacity-3 capacity-4
+3 1 9 4 9 6 4
+2 1 10 6 3
+1
+pick-up truck-1 city-loc-9 package-3 capacity-0 capacity-1
+3 2 9 4 9 6 1
+2 2 10 6 0
+1
+pick-up truck-1 city-loc-9 package-3 capacity-1 capacity-2
+3 2 9 4 9 6 2
+2 2 10 6 1
+1
+pick-up truck-1 city-loc-9 package-3 capacity-2 capacity-3
+3 2 9 4 9 6 3
+2 2 10 6 2
+1
+pick-up truck-1 city-loc-9 package-3 capacity-3 capacity-4
+3 2 9 4 9 6 4
+2 2 10 6 3
+1
+pick-up truck-1 city-loc-9 package-4 capacity-0 capacity-1
+3 3 9 4 9 6 1
+2 3 10 6 0
+1
+pick-up truck-1 city-loc-9 package-4 capacity-1 capacity-2
+3 3 9 4 9 6 2
+2 3 10 6 1
+1
+pick-up truck-1 city-loc-9 package-4 capacity-2 capacity-3
+3 3 9 4 9 6 3
+2 3 10 6 2
+1
+pick-up truck-1 city-loc-9 package-4 capacity-3 capacity-4
+3 3 9 4 9 6 4
+2 3 10 6 3
+1
+pick-up truck-2 city-loc-1 package-1 capacity-0 capacity-1
+3 0 0 5 0 7 1
+2 0 11 7 0
+1
+pick-up truck-2 city-loc-1 package-1 capacity-1 capacity-2
+3 0 0 5 0 7 2
+2 0 11 7 1
+1
+pick-up truck-2 city-loc-1 package-1 capacity-2 capacity-3
+3 0 0 5 0 7 3
+2 0 11 7 2
+1
+pick-up truck-2 city-loc-1 package-1 capacity-3 capacity-4
+3 0 0 5 0 7 4
+2 0 11 7 3
+1
+pick-up truck-2 city-loc-1 package-2 capacity-0 capacity-1
+3 1 0 5 0 7 1
+2 1 11 7 0
+1
+pick-up truck-2 city-loc-1 package-2 capacity-1 capacity-2
+3 1 0 5 0 7 2
+2 1 11 7 1
+1
+pick-up truck-2 city-loc-1 package-2 capacity-2 capacity-3
+3 1 0 5 0 7 3
+2 1 11 7 2
+1
+pick-up truck-2 city-loc-1 package-2 capacity-3 capacity-4
+3 1 0 5 0 7 4
+2 1 11 7 3
+1
+pick-up truck-2 city-loc-1 package-3 capacity-0 capacity-1
+3 2 0 5 0 7 1
+2 2 11 7 0
+1
+pick-up truck-2 city-loc-1 package-3 capacity-1 capacity-2
+3 2 0 5 0 7 2
+2 2 11 7 1
+1
+pick-up truck-2 city-loc-1 package-3 capacity-2 capacity-3
+3 2 0 5 0 7 3
+2 2 11 7 2
+1
+pick-up truck-2 city-loc-1 package-3 capacity-3 capacity-4
+3 2 0 5 0 7 4
+2 2 11 7 3
+1
+pick-up truck-2 city-loc-1 package-4 capacity-0 capacity-1
+3 3 0 5 0 7 1
+2 3 11 7 0
+1
+pick-up truck-2 city-loc-1 package-4 capacity-1 capacity-2
+3 3 0 5 0 7 2
+2 3 11 7 1
+1
+pick-up truck-2 city-loc-1 package-4 capacity-2 capacity-3
+3 3 0 5 0 7 3
+2 3 11 7 2
+1
+pick-up truck-2 city-loc-1 package-4 capacity-3 capacity-4
+3 3 0 5 0 7 4
+2 3 11 7 3
+1
+pick-up truck-2 city-loc-10 package-1 capacity-0 capacity-1
+3 0 1 5 1 7 1
+2 0 11 7 0
+1
+pick-up truck-2 city-loc-10 package-1 capacity-1 capacity-2
+3 0 1 5 1 7 2
+2 0 11 7 1
+1
+pick-up truck-2 city-loc-10 package-1 capacity-2 capacity-3
+3 0 1 5 1 7 3
+2 0 11 7 2
+1
+pick-up truck-2 city-loc-10 package-1 capacity-3 capacity-4
+3 0 1 5 1 7 4
+2 0 11 7 3
+1
+pick-up truck-2 city-loc-10 package-2 capacity-0 capacity-1
+3 1 1 5 1 7 1
+2 1 11 7 0
+1
+pick-up truck-2 city-loc-10 package-2 capacity-1 capacity-2
+3 1 1 5 1 7 2
+2 1 11 7 1
+1
+pick-up truck-2 city-loc-10 package-2 capacity-2 capacity-3
+3 1 1 5 1 7 3
+2 1 11 7 2
+1
+pick-up truck-2 city-loc-10 package-2 capacity-3 capacity-4
+3 1 1 5 1 7 4
+2 1 11 7 3
+1
+pick-up truck-2 city-loc-10 package-3 capacity-0 capacity-1
+3 2 1 5 1 7 1
+2 2 11 7 0
+1
+pick-up truck-2 city-loc-10 package-3 capacity-1 capacity-2
+3 2 1 5 1 7 2
+2 2 11 7 1
+1
+pick-up truck-2 city-loc-10 package-3 capacity-2 capacity-3
+3 2 1 5 1 7 3
+2 2 11 7 2
+1
+pick-up truck-2 city-loc-10 package-3 capacity-3 capacity-4
+3 2 1 5 1 7 4
+2 2 11 7 3
+1
+pick-up truck-2 city-loc-10 package-4 capacity-0 capacity-1
+3 3 1 5 1 7 1
+2 3 11 7 0
+1
+pick-up truck-2 city-loc-10 package-4 capacity-1 capacity-2
+3 3 1 5 1 7 2
+2 3 11 7 1
+1
+pick-up truck-2 city-loc-10 package-4 capacity-2 capacity-3
+3 3 1 5 1 7 3
+2 3 11 7 2
+1
+pick-up truck-2 city-loc-10 package-4 capacity-3 capacity-4
+3 3 1 5 1 7 4
+2 3 11 7 3
+1
+pick-up truck-2 city-loc-2 package-1 capacity-0 capacity-1
+3 0 2 5 2 7 1
+2 0 11 7 0
+1
+pick-up truck-2 city-loc-2 package-1 capacity-1 capacity-2
+3 0 2 5 2 7 2
+2 0 11 7 1
+1
+pick-up truck-2 city-loc-2 package-1 capacity-2 capacity-3
+3 0 2 5 2 7 3
+2 0 11 7 2
+1
+pick-up truck-2 city-loc-2 package-1 capacity-3 capacity-4
+3 0 2 5 2 7 4
+2 0 11 7 3
+1
+pick-up truck-2 city-loc-2 package-2 capacity-0 capacity-1
+3 1 2 5 2 7 1
+2 1 11 7 0
+1
+pick-up truck-2 city-loc-2 package-2 capacity-1 capacity-2
+3 1 2 5 2 7 2
+2 1 11 7 1
+1
+pick-up truck-2 city-loc-2 package-2 capacity-2 capacity-3
+3 1 2 5 2 7 3
+2 1 11 7 2
+1
+pick-up truck-2 city-loc-2 package-2 capacity-3 capacity-4
+3 1 2 5 2 7 4
+2 1 11 7 3
+1
+pick-up truck-2 city-loc-2 package-3 capacity-0 capacity-1
+3 2 2 5 2 7 1
+2 2 11 7 0
+1
+pick-up truck-2 city-loc-2 package-3 capacity-1 capacity-2
+3 2 2 5 2 7 2
+2 2 11 7 1
+1
+pick-up truck-2 city-loc-2 package-3 capacity-2 capacity-3
+3 2 2 5 2 7 3
+2 2 11 7 2
+1
+pick-up truck-2 city-loc-2 package-3 capacity-3 capacity-4
+3 2 2 5 2 7 4
+2 2 11 7 3
+1
+pick-up truck-2 city-loc-2 package-4 capacity-0 capacity-1
+3 3 2 5 2 7 1
+2 3 11 7 0
+1
+pick-up truck-2 city-loc-2 package-4 capacity-1 capacity-2
+3 3 2 5 2 7 2
+2 3 11 7 1
+1
+pick-up truck-2 city-loc-2 package-4 capacity-2 capacity-3
+3 3 2 5 2 7 3
+2 3 11 7 2
+1
+pick-up truck-2 city-loc-2 package-4 capacity-3 capacity-4
+3 3 2 5 2 7 4
+2 3 11 7 3
+1
+pick-up truck-2 city-loc-3 package-1 capacity-0 capacity-1
+3 0 3 5 3 7 1
+2 0 11 7 0
+1
+pick-up truck-2 city-loc-3 package-1 capacity-1 capacity-2
+3 0 3 5 3 7 2
+2 0 11 7 1
+1
+pick-up truck-2 city-loc-3 package-1 capacity-2 capacity-3
+3 0 3 5 3 7 3
+2 0 11 7 2
+1
+pick-up truck-2 city-loc-3 package-1 capacity-3 capacity-4
+3 0 3 5 3 7 4
+2 0 11 7 3
+1
+pick-up truck-2 city-loc-3 package-2 capacity-0 capacity-1
+3 1 3 5 3 7 1
+2 1 11 7 0
+1
+pick-up truck-2 city-loc-3 package-2 capacity-1 capacity-2
+3 1 3 5 3 7 2
+2 1 11 7 1
+1
+pick-up truck-2 city-loc-3 package-2 capacity-2 capacity-3
+3 1 3 5 3 7 3
+2 1 11 7 2
+1
+pick-up truck-2 city-loc-3 package-2 capacity-3 capacity-4
+3 1 3 5 3 7 4
+2 1 11 7 3
+1
+pick-up truck-2 city-loc-3 package-3 capacity-0 capacity-1
+3 2 3 5 3 7 1
+2 2 11 7 0
+1
+pick-up truck-2 city-loc-3 package-3 capacity-1 capacity-2
+3 2 3 5 3 7 2
+2 2 11 7 1
+1
+pick-up truck-2 city-loc-3 package-3 capacity-2 capacity-3
+3 2 3 5 3 7 3
+2 2 11 7 2
+1
+pick-up truck-2 city-loc-3 package-3 capacity-3 capacity-4
+3 2 3 5 3 7 4
+2 2 11 7 3
+1
+pick-up truck-2 city-loc-3 package-4 capacity-0 capacity-1
+3 3 3 5 3 7 1
+2 3 11 7 0
+1
+pick-up truck-2 city-loc-3 package-4 capacity-1 capacity-2
+3 3 3 5 3 7 2
+2 3 11 7 1
+1
+pick-up truck-2 city-loc-3 package-4 capacity-2 capacity-3
+3 3 3 5 3 7 3
+2 3 11 7 2
+1
+pick-up truck-2 city-loc-3 package-4 capacity-3 capacity-4
+3 3 3 5 3 7 4
+2 3 11 7 3
+1
+pick-up truck-2 city-loc-4 package-1 capacity-0 capacity-1
+3 0 4 5 4 7 1
+2 0 11 7 0
+1
+pick-up truck-2 city-loc-4 package-1 capacity-1 capacity-2
+3 0 4 5 4 7 2
+2 0 11 7 1
+1
+pick-up truck-2 city-loc-4 package-1 capacity-2 capacity-3
+3 0 4 5 4 7 3
+2 0 11 7 2
+1
+pick-up truck-2 city-loc-4 package-1 capacity-3 capacity-4
+3 0 4 5 4 7 4
+2 0 11 7 3
+1
+pick-up truck-2 city-loc-4 package-2 capacity-0 capacity-1
+3 1 4 5 4 7 1
+2 1 11 7 0
+1
+pick-up truck-2 city-loc-4 package-2 capacity-1 capacity-2
+3 1 4 5 4 7 2
+2 1 11 7 1
+1
+pick-up truck-2 city-loc-4 package-2 capacity-2 capacity-3
+3 1 4 5 4 7 3
+2 1 11 7 2
+1
+pick-up truck-2 city-loc-4 package-2 capacity-3 capacity-4
+3 1 4 5 4 7 4
+2 1 11 7 3
+1
+pick-up truck-2 city-loc-4 package-3 capacity-0 capacity-1
+3 2 4 5 4 7 1
+2 2 11 7 0
+1
+pick-up truck-2 city-loc-4 package-3 capacity-1 capacity-2
+3 2 4 5 4 7 2
+2 2 11 7 1
+1
+pick-up truck-2 city-loc-4 package-3 capacity-2 capacity-3
+3 2 4 5 4 7 3
+2 2 11 7 2
+1
+pick-up truck-2 city-loc-4 package-3 capacity-3 capacity-4
+3 2 4 5 4 7 4
+2 2 11 7 3
+1
+pick-up truck-2 city-loc-4 package-4 capacity-0 capacity-1
+3 3 4 5 4 7 1
+2 3 11 7 0
+1
+pick-up truck-2 city-loc-4 package-4 capacity-1 capacity-2
+3 3 4 5 4 7 2
+2 3 11 7 1
+1
+pick-up truck-2 city-loc-4 package-4 capacity-2 capacity-3
+3 3 4 5 4 7 3
+2 3 11 7 2
+1
+pick-up truck-2 city-loc-4 package-4 capacity-3 capacity-4
+3 3 4 5 4 7 4
+2 3 11 7 3
+1
+pick-up truck-2 city-loc-5 package-1 capacity-0 capacity-1
+3 0 5 5 5 7 1
+2 0 11 7 0
+1
+pick-up truck-2 city-loc-5 package-1 capacity-1 capacity-2
+3 0 5 5 5 7 2
+2 0 11 7 1
+1
+pick-up truck-2 city-loc-5 package-1 capacity-2 capacity-3
+3 0 5 5 5 7 3
+2 0 11 7 2
+1
+pick-up truck-2 city-loc-5 package-1 capacity-3 capacity-4
+3 0 5 5 5 7 4
+2 0 11 7 3
+1
+pick-up truck-2 city-loc-5 package-2 capacity-0 capacity-1
+3 1 5 5 5 7 1
+2 1 11 7 0
+1
+pick-up truck-2 city-loc-5 package-2 capacity-1 capacity-2
+3 1 5 5 5 7 2
+2 1 11 7 1
+1
+pick-up truck-2 city-loc-5 package-2 capacity-2 capacity-3
+3 1 5 5 5 7 3
+2 1 11 7 2
+1
+pick-up truck-2 city-loc-5 package-2 capacity-3 capacity-4
+3 1 5 5 5 7 4
+2 1 11 7 3
+1
+pick-up truck-2 city-loc-5 package-3 capacity-0 capacity-1
+3 2 5 5 5 7 1
+2 2 11 7 0
+1
+pick-up truck-2 city-loc-5 package-3 capacity-1 capacity-2
+3 2 5 5 5 7 2
+2 2 11 7 1
+1
+pick-up truck-2 city-loc-5 package-3 capacity-2 capacity-3
+3 2 5 5 5 7 3
+2 2 11 7 2
+1
+pick-up truck-2 city-loc-5 package-3 capacity-3 capacity-4
+3 2 5 5 5 7 4
+2 2 11 7 3
+1
+pick-up truck-2 city-loc-5 package-4 capacity-0 capacity-1
+3 3 5 5 5 7 1
+2 3 11 7 0
+1
+pick-up truck-2 city-loc-5 package-4 capacity-1 capacity-2
+3 3 5 5 5 7 2
+2 3 11 7 1
+1
+pick-up truck-2 city-loc-5 package-4 capacity-2 capacity-3
+3 3 5 5 5 7 3
+2 3 11 7 2
+1
+pick-up truck-2 city-loc-5 package-4 capacity-3 capacity-4
+3 3 5 5 5 7 4
+2 3 11 7 3
+1
+pick-up truck-2 city-loc-6 package-1 capacity-0 capacity-1
+3 0 6 5 6 7 1
+2 0 11 7 0
+1
+pick-up truck-2 city-loc-6 package-1 capacity-1 capacity-2
+3 0 6 5 6 7 2
+2 0 11 7 1
+1
+pick-up truck-2 city-loc-6 package-1 capacity-2 capacity-3
+3 0 6 5 6 7 3
+2 0 11 7 2
+1
+pick-up truck-2 city-loc-6 package-1 capacity-3 capacity-4
+3 0 6 5 6 7 4
+2 0 11 7 3
+1
+pick-up truck-2 city-loc-6 package-2 capacity-0 capacity-1
+3 1 6 5 6 7 1
+2 1 11 7 0
+1
+pick-up truck-2 city-loc-6 package-2 capacity-1 capacity-2
+3 1 6 5 6 7 2
+2 1 11 7 1
+1
+pick-up truck-2 city-loc-6 package-2 capacity-2 capacity-3
+3 1 6 5 6 7 3
+2 1 11 7 2
+1
+pick-up truck-2 city-loc-6 package-2 capacity-3 capacity-4
+3 1 6 5 6 7 4
+2 1 11 7 3
+1
+pick-up truck-2 city-loc-6 package-3 capacity-0 capacity-1
+3 2 6 5 6 7 1
+2 2 11 7 0
+1
+pick-up truck-2 city-loc-6 package-3 capacity-1 capacity-2
+3 2 6 5 6 7 2
+2 2 11 7 1
+1
+pick-up truck-2 city-loc-6 package-3 capacity-2 capacity-3
+3 2 6 5 6 7 3
+2 2 11 7 2
+1
+pick-up truck-2 city-loc-6 package-3 capacity-3 capacity-4
+3 2 6 5 6 7 4
+2 2 11 7 3
+1
+pick-up truck-2 city-loc-6 package-4 capacity-0 capacity-1
+3 3 6 5 6 7 1
+2 3 11 7 0
+1
+pick-up truck-2 city-loc-6 package-4 capacity-1 capacity-2
+3 3 6 5 6 7 2
+2 3 11 7 1
+1
+pick-up truck-2 city-loc-6 package-4 capacity-2 capacity-3
+3 3 6 5 6 7 3
+2 3 11 7 2
+1
+pick-up truck-2 city-loc-6 package-4 capacity-3 capacity-4
+3 3 6 5 6 7 4
+2 3 11 7 3
+1
+pick-up truck-2 city-loc-7 package-1 capacity-0 capacity-1
+3 0 7 5 7 7 1
+2 0 11 7 0
+1
+pick-up truck-2 city-loc-7 package-1 capacity-1 capacity-2
+3 0 7 5 7 7 2
+2 0 11 7 1
+1
+pick-up truck-2 city-loc-7 package-1 capacity-2 capacity-3
+3 0 7 5 7 7 3
+2 0 11 7 2
+1
+pick-up truck-2 city-loc-7 package-1 capacity-3 capacity-4
+3 0 7 5 7 7 4
+2 0 11 7 3
+1
+pick-up truck-2 city-loc-7 package-2 capacity-0 capacity-1
+3 1 7 5 7 7 1
+2 1 11 7 0
+1
+pick-up truck-2 city-loc-7 package-2 capacity-1 capacity-2
+3 1 7 5 7 7 2
+2 1 11 7 1
+1
+pick-up truck-2 city-loc-7 package-2 capacity-2 capacity-3
+3 1 7 5 7 7 3
+2 1 11 7 2
+1
+pick-up truck-2 city-loc-7 package-2 capacity-3 capacity-4
+3 1 7 5 7 7 4
+2 1 11 7 3
+1
+pick-up truck-2 city-loc-7 package-3 capacity-0 capacity-1
+3 2 7 5 7 7 1
+2 2 11 7 0
+1
+pick-up truck-2 city-loc-7 package-3 capacity-1 capacity-2
+3 2 7 5 7 7 2
+2 2 11 7 1
+1
+pick-up truck-2 city-loc-7 package-3 capacity-2 capacity-3
+3 2 7 5 7 7 3
+2 2 11 7 2
+1
+pick-up truck-2 city-loc-7 package-3 capacity-3 capacity-4
+3 2 7 5 7 7 4
+2 2 11 7 3
+1
+pick-up truck-2 city-loc-7 package-4 capacity-0 capacity-1
+3 3 7 5 7 7 1
+2 3 11 7 0
+1
+pick-up truck-2 city-loc-7 package-4 capacity-1 capacity-2
+3 3 7 5 7 7 2
+2 3 11 7 1
+1
+pick-up truck-2 city-loc-7 package-4 capacity-2 capacity-3
+3 3 7 5 7 7 3
+2 3 11 7 2
+1
+pick-up truck-2 city-loc-7 package-4 capacity-3 capacity-4
+3 3 7 5 7 7 4
+2 3 11 7 3
+1
+pick-up truck-2 city-loc-8 package-1 capacity-0 capacity-1
+3 0 8 5 8 7 1
+2 0 11 7 0
+1
+pick-up truck-2 city-loc-8 package-1 capacity-1 capacity-2
+3 0 8 5 8 7 2
+2 0 11 7 1
+1
+pick-up truck-2 city-loc-8 package-1 capacity-2 capacity-3
+3 0 8 5 8 7 3
+2 0 11 7 2
+1
+pick-up truck-2 city-loc-8 package-1 capacity-3 capacity-4
+3 0 8 5 8 7 4
+2 0 11 7 3
+1
+pick-up truck-2 city-loc-8 package-2 capacity-0 capacity-1
+3 1 8 5 8 7 1
+2 1 11 7 0
+1
+pick-up truck-2 city-loc-8 package-2 capacity-1 capacity-2
+3 1 8 5 8 7 2
+2 1 11 7 1
+1
+pick-up truck-2 city-loc-8 package-2 capacity-2 capacity-3
+3 1 8 5 8 7 3
+2 1 11 7 2
+1
+pick-up truck-2 city-loc-8 package-2 capacity-3 capacity-4
+3 1 8 5 8 7 4
+2 1 11 7 3
+1
+pick-up truck-2 city-loc-8 package-3 capacity-0 capacity-1
+3 2 8 5 8 7 1
+2 2 11 7 0
+1
+pick-up truck-2 city-loc-8 package-3 capacity-1 capacity-2
+3 2 8 5 8 7 2
+2 2 11 7 1
+1
+pick-up truck-2 city-loc-8 package-3 capacity-2 capacity-3
+3 2 8 5 8 7 3
+2 2 11 7 2
+1
+pick-up truck-2 city-loc-8 package-3 capacity-3 capacity-4
+3 2 8 5 8 7 4
+2 2 11 7 3
+1
+pick-up truck-2 city-loc-8 package-4 capacity-0 capacity-1
+3 3 8 5 8 7 1
+2 3 11 7 0
+1
+pick-up truck-2 city-loc-8 package-4 capacity-1 capacity-2
+3 3 8 5 8 7 2
+2 3 11 7 1
+1
+pick-up truck-2 city-loc-8 package-4 capacity-2 capacity-3
+3 3 8 5 8 7 3
+2 3 11 7 2
+1
+pick-up truck-2 city-loc-8 package-4 capacity-3 capacity-4
+3 3 8 5 8 7 4
+2 3 11 7 3
+1
+pick-up truck-2 city-loc-9 package-1 capacity-0 capacity-1
+3 0 9 5 9 7 1
+2 0 11 7 0
+1
+pick-up truck-2 city-loc-9 package-1 capacity-1 capacity-2
+3 0 9 5 9 7 2
+2 0 11 7 1
+1
+pick-up truck-2 city-loc-9 package-1 capacity-2 capacity-3
+3 0 9 5 9 7 3
+2 0 11 7 2
+1
+pick-up truck-2 city-loc-9 package-1 capacity-3 capacity-4
+3 0 9 5 9 7 4
+2 0 11 7 3
+1
+pick-up truck-2 city-loc-9 package-2 capacity-0 capacity-1
+3 1 9 5 9 7 1
+2 1 11 7 0
+1
+pick-up truck-2 city-loc-9 package-2 capacity-1 capacity-2
+3 1 9 5 9 7 2
+2 1 11 7 1
+1
+pick-up truck-2 city-loc-9 package-2 capacity-2 capacity-3
+3 1 9 5 9 7 3
+2 1 11 7 2
+1
+pick-up truck-2 city-loc-9 package-2 capacity-3 capacity-4
+3 1 9 5 9 7 4
+2 1 11 7 3
+1
+pick-up truck-2 city-loc-9 package-3 capacity-0 capacity-1
+3 2 9 5 9 7 1
+2 2 11 7 0
+1
+pick-up truck-2 city-loc-9 package-3 capacity-1 capacity-2
+3 2 9 5 9 7 2
+2 2 11 7 1
+1
+pick-up truck-2 city-loc-9 package-3 capacity-2 capacity-3
+3 2 9 5 9 7 3
+2 2 11 7 2
+1
+pick-up truck-2 city-loc-9 package-3 capacity-3 capacity-4
+3 2 9 5 9 7 4
+2 2 11 7 3
+1
+pick-up truck-2 city-loc-9 package-4 capacity-0 capacity-1
+3 3 9 5 9 7 1
+2 3 11 7 0
+1
+pick-up truck-2 city-loc-9 package-4 capacity-1 capacity-2
+3 3 9 5 9 7 2
+2 3 11 7 1
+1
+pick-up truck-2 city-loc-9 package-4 capacity-2 capacity-3
+3 3 9 5 9 7 3
+2 3 11 7 2
+1
+pick-up truck-2 city-loc-9 package-4 capacity-3 capacity-4
+3 3 9 5 9 7 4
+2 3 11 7 3
+1

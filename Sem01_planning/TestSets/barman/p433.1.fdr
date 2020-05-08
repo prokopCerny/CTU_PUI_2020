@@ -1,0 +1,963 @@
+22
+6
+(contains shaker1 cocktail1)
+(contains shaker1 cocktail2)
+(contains shaker1 cocktail3)
+(contains shaker1 cocktail4)
+(empty shaker1)
+(unshaked shaker1)
+6
+(handempty left)
+(holding left shaker1)
+(holding left shot1)
+(holding left shot2)
+(holding left shot3)
+(holding left shot4)
+6
+(handempty right)
+(holding right shaker1)
+(holding right shot1)
+(holding right shot2)
+(holding right shot3)
+(holding right shot4)
+5
+(clean shot1)
+(contains shot1 cocktail3)
+(used shot1 ingredient1)
+(used shot1 ingredient2)
+(used shot1 ingredient3)
+5
+(clean shot2)
+(contains shot2 cocktail2)
+(used shot2 ingredient1)
+(used shot2 ingredient2)
+(used shot2 ingredient3)
+5
+(clean shot3)
+(contains shot3 cocktail1)
+(used shot3 ingredient1)
+(used shot3 ingredient2)
+(used shot3 ingredient3)
+5
+(clean shot4)
+(contains shot4 cocktail4)
+(used shot4 ingredient1)
+(used shot4 ingredient2)
+(used shot4 ingredient3)
+5
+(contains shot1 ingredient1)
+(contains shot1 ingredient2)
+(contains shot1 ingredient3)
+(empty shot1)
+<none of those>
+5
+(contains shot2 ingredient1)
+(contains shot2 ingredient2)
+(contains shot2 ingredient3)
+(empty shot2)
+<none of those>
+5
+(contains shot3 ingredient1)
+(contains shot3 ingredient2)
+(contains shot3 ingredient3)
+(empty shot3)
+<none of those>
+5
+(contains shot4 ingredient1)
+(contains shot4 ingredient2)
+(contains shot4 ingredient3)
+(empty shot4)
+<none of those>
+3
+(shaker-level shaker1 l0)
+(shaker-level shaker1 l1)
+(shaker-level shaker1 l2)
+2
+(clean shaker1)
+<none of those>
+2
+(contains shaker1 ingredient1)
+<none of those>
+2
+(contains shaker1 ingredient2)
+<none of those>
+2
+(contains shaker1 ingredient3)
+<none of those>
+2
+(ontable shaker1)
+<none of those>
+2
+(ontable shot1)
+<none of those>
+2
+(ontable shot2)
+<none of those>
+2
+(ontable shot3)
+<none of those>
+2
+(ontable shot4)
+<none of those>
+2
+(shaked shaker1)
+<none of those>
+4 0 0 0 0 0 0 3 3 3 3 0 0 1 1 1 0 0 0 0 0 1
+4 3 1 4 1 5 1 6 1
+214
+clean-shaker left right shaker1
+8 0 4 1 1 2 0 11 0 17 0 18 0 19 0 20 0
+1 12 0
+1
+clean-shaker right left shaker1
+8 0 4 1 0 2 1 11 0 17 0 18 0 19 0 20 0
+1 12 0
+1
+clean-shot shot1 ingredient1 left right
+8 1 2 2 0 3 2 7 3 16 0 18 0 19 0 20 0
+1 3 0
+1
+clean-shot shot1 ingredient1 right left
+8 1 0 2 2 3 2 7 3 16 0 18 0 19 0 20 0
+1 3 0
+1
+clean-shot shot1 ingredient2 left right
+8 1 2 2 0 3 3 7 3 16 0 18 0 19 0 20 0
+1 3 0
+1
+clean-shot shot1 ingredient2 right left
+8 1 0 2 2 3 3 7 3 16 0 18 0 19 0 20 0
+1 3 0
+1
+clean-shot shot1 ingredient3 left right
+8 1 2 2 0 3 4 7 3 16 0 18 0 19 0 20 0
+1 3 0
+1
+clean-shot shot1 ingredient3 right left
+8 1 0 2 2 3 4 7 3 16 0 18 0 19 0 20 0
+1 3 0
+1
+clean-shot shot2 ingredient1 left right
+8 1 3 2 0 4 2 8 3 16 0 17 0 19 0 20 0
+1 4 0
+1
+clean-shot shot2 ingredient1 right left
+8 1 0 2 3 4 2 8 3 16 0 17 0 19 0 20 0
+1 4 0
+1
+clean-shot shot2 ingredient2 left right
+8 1 3 2 0 4 3 8 3 16 0 17 0 19 0 20 0
+1 4 0
+1
+clean-shot shot2 ingredient2 right left
+8 1 0 2 3 4 3 8 3 16 0 17 0 19 0 20 0
+1 4 0
+1
+clean-shot shot2 ingredient3 left right
+8 1 3 2 0 4 4 8 3 16 0 17 0 19 0 20 0
+1 4 0
+1
+clean-shot shot2 ingredient3 right left
+8 1 0 2 3 4 4 8 3 16 0 17 0 19 0 20 0
+1 4 0
+1
+clean-shot shot3 ingredient1 left right
+8 1 4 2 0 5 2 9 3 16 0 17 0 18 0 20 0
+1 5 0
+1
+clean-shot shot3 ingredient1 right left
+8 1 0 2 4 5 2 9 3 16 0 17 0 18 0 20 0
+1 5 0
+1
+clean-shot shot3 ingredient2 left right
+8 1 4 2 0 5 3 9 3 16 0 17 0 18 0 20 0
+1 5 0
+1
+clean-shot shot3 ingredient2 right left
+8 1 0 2 4 5 3 9 3 16 0 17 0 18 0 20 0
+1 5 0
+1
+clean-shot shot3 ingredient3 left right
+8 1 4 2 0 5 4 9 3 16 0 17 0 18 0 20 0
+1 5 0
+1
+clean-shot shot3 ingredient3 right left
+8 1 0 2 4 5 4 9 3 16 0 17 0 18 0 20 0
+1 5 0
+1
+clean-shot shot4 ingredient1 left right
+8 1 5 2 0 6 2 10 3 16 0 17 0 18 0 19 0
+1 6 0
+1
+clean-shot shot4 ingredient1 right left
+8 1 0 2 5 6 2 10 3 16 0 17 0 18 0 19 0
+1 6 0
+1
+clean-shot shot4 ingredient2 left right
+8 1 5 2 0 6 3 10 3 16 0 17 0 18 0 19 0
+1 6 0
+1
+clean-shot shot4 ingredient2 right left
+8 1 0 2 5 6 3 10 3 16 0 17 0 18 0 19 0
+1 6 0
+1
+clean-shot shot4 ingredient3 left right
+8 1 5 2 0 6 4 10 3 16 0 17 0 18 0 19 0
+1 6 0
+1
+clean-shot shot4 ingredient3 right left
+8 1 0 2 5 6 4 10 3 16 0 17 0 18 0 19 0
+1 6 0
+1
+empty-shaker left shaker1 cocktail1 l0 l0
+4 0 0 1 1 11 0 21 0
+2 0 4 21 1
+1
+empty-shaker left shaker1 cocktail1 l1 l0
+4 0 0 1 1 11 1 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker left shaker1 cocktail1 l2 l0
+4 0 0 1 1 11 2 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker left shaker1 cocktail2 l0 l0
+4 0 1 1 1 11 0 21 0
+2 0 4 21 1
+1
+empty-shaker left shaker1 cocktail2 l1 l0
+4 0 1 1 1 11 1 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker left shaker1 cocktail2 l2 l0
+4 0 1 1 1 11 2 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker left shaker1 cocktail3 l0 l0
+4 0 2 1 1 11 0 21 0
+2 0 4 21 1
+1
+empty-shaker left shaker1 cocktail3 l1 l0
+4 0 2 1 1 11 1 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker left shaker1 cocktail3 l2 l0
+4 0 2 1 1 11 2 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker left shaker1 cocktail4 l0 l0
+4 0 3 1 1 11 0 21 0
+2 0 4 21 1
+1
+empty-shaker left shaker1 cocktail4 l1 l0
+4 0 3 1 1 11 1 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker left shaker1 cocktail4 l2 l0
+4 0 3 1 1 11 2 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker right shaker1 cocktail1 l0 l0
+4 0 0 2 1 11 0 21 0
+2 0 4 21 1
+1
+empty-shaker right shaker1 cocktail1 l1 l0
+4 0 0 2 1 11 1 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker right shaker1 cocktail1 l2 l0
+4 0 0 2 1 11 2 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker right shaker1 cocktail2 l0 l0
+4 0 1 2 1 11 0 21 0
+2 0 4 21 1
+1
+empty-shaker right shaker1 cocktail2 l1 l0
+4 0 1 2 1 11 1 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker right shaker1 cocktail2 l2 l0
+4 0 1 2 1 11 2 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker right shaker1 cocktail3 l0 l0
+4 0 2 2 1 11 0 21 0
+2 0 4 21 1
+1
+empty-shaker right shaker1 cocktail3 l1 l0
+4 0 2 2 1 11 1 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker right shaker1 cocktail3 l2 l0
+4 0 2 2 1 11 2 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker right shaker1 cocktail4 l0 l0
+4 0 3 2 1 11 0 21 0
+2 0 4 21 1
+1
+empty-shaker right shaker1 cocktail4 l1 l0
+4 0 3 2 1 11 1 21 0
+3 0 4 11 0 21 1
+1
+empty-shaker right shaker1 cocktail4 l2 l0
+4 0 3 2 1 11 2 21 0
+3 0 4 11 0 21 1
+1
+empty-shot left shot1 ingredient1
+3 1 2 3 2 7 0
+1 7 3
+1
+empty-shot left shot1 ingredient2
+3 1 2 3 3 7 1
+1 7 3
+1
+empty-shot left shot1 ingredient3
+3 1 2 3 4 7 2
+1 7 3
+1
+empty-shot left shot2 ingredient1
+3 1 3 4 2 8 0
+1 8 3
+1
+empty-shot left shot2 ingredient2
+3 1 3 4 3 8 1
+1 8 3
+1
+empty-shot left shot2 ingredient3
+3 1 3 4 4 8 2
+1 8 3
+1
+empty-shot left shot3 ingredient1
+3 1 4 5 2 9 0
+1 9 3
+1
+empty-shot left shot3 ingredient2
+3 1 4 5 3 9 1
+1 9 3
+1
+empty-shot left shot3 ingredient3
+3 1 4 5 4 9 2
+1 9 3
+1
+empty-shot left shot4 ingredient1
+3 1 5 6 2 10 0
+1 10 3
+1
+empty-shot left shot4 ingredient2
+3 1 5 6 3 10 1
+1 10 3
+1
+empty-shot left shot4 ingredient3
+3 1 5 6 4 10 2
+1 10 3
+1
+empty-shot right shot1 ingredient1
+3 2 2 3 2 7 0
+1 7 3
+1
+empty-shot right shot1 ingredient2
+3 2 2 3 3 7 1
+1 7 3
+1
+empty-shot right shot1 ingredient3
+3 2 2 3 4 7 2
+1 7 3
+1
+empty-shot right shot2 ingredient1
+3 2 3 4 2 8 0
+1 8 3
+1
+empty-shot right shot2 ingredient2
+3 2 3 4 3 8 1
+1 8 3
+1
+empty-shot right shot2 ingredient3
+3 2 3 4 4 8 2
+1 8 3
+1
+empty-shot right shot3 ingredient1
+3 2 4 5 2 9 0
+1 9 3
+1
+empty-shot right shot3 ingredient2
+3 2 4 5 3 9 1
+1 9 3
+1
+empty-shot right shot3 ingredient3
+3 2 4 5 4 9 2
+1 9 3
+1
+empty-shot right shot4 ingredient1
+3 2 5 6 2 10 0
+1 10 3
+1
+empty-shot right shot4 ingredient2
+3 2 5 6 3 10 1
+1 10 3
+1
+empty-shot right shot4 ingredient3
+3 2 5 6 4 10 2
+1 10 3
+1
+fill-shot shot1 ingredient1 left right dispenser1
+8 1 2 2 0 3 0 7 3 16 0 18 0 19 0 20 0
+2 3 2 7 0
+1
+fill-shot shot1 ingredient1 right left dispenser1
+8 1 0 2 2 3 0 7 3 16 0 18 0 19 0 20 0
+2 3 2 7 0
+1
+fill-shot shot1 ingredient2 left right dispenser2
+8 1 2 2 0 3 0 7 3 16 0 18 0 19 0 20 0
+2 3 3 7 1
+1
+fill-shot shot1 ingredient2 right left dispenser2
+8 1 0 2 2 3 0 7 3 16 0 18 0 19 0 20 0
+2 3 3 7 1
+1
+fill-shot shot1 ingredient3 left right dispenser3
+8 1 2 2 0 3 0 7 3 16 0 18 0 19 0 20 0
+2 3 4 7 2
+1
+fill-shot shot1 ingredient3 right left dispenser3
+8 1 0 2 2 3 0 7 3 16 0 18 0 19 0 20 0
+2 3 4 7 2
+1
+fill-shot shot2 ingredient1 left right dispenser1
+8 1 3 2 0 4 0 8 3 16 0 17 0 19 0 20 0
+2 4 2 8 0
+1
+fill-shot shot2 ingredient1 right left dispenser1
+8 1 0 2 3 4 0 8 3 16 0 17 0 19 0 20 0
+2 4 2 8 0
+1
+fill-shot shot2 ingredient2 left right dispenser2
+8 1 3 2 0 4 0 8 3 16 0 17 0 19 0 20 0
+2 4 3 8 1
+1
+fill-shot shot2 ingredient2 right left dispenser2
+8 1 0 2 3 4 0 8 3 16 0 17 0 19 0 20 0
+2 4 3 8 1
+1
+fill-shot shot2 ingredient3 left right dispenser3
+8 1 3 2 0 4 0 8 3 16 0 17 0 19 0 20 0
+2 4 4 8 2
+1
+fill-shot shot2 ingredient3 right left dispenser3
+8 1 0 2 3 4 0 8 3 16 0 17 0 19 0 20 0
+2 4 4 8 2
+1
+fill-shot shot3 ingredient1 left right dispenser1
+8 1 4 2 0 5 0 9 3 16 0 17 0 18 0 20 0
+2 5 2 9 0
+1
+fill-shot shot3 ingredient1 right left dispenser1
+8 1 0 2 4 5 0 9 3 16 0 17 0 18 0 20 0
+2 5 2 9 0
+1
+fill-shot shot3 ingredient2 left right dispenser2
+8 1 4 2 0 5 0 9 3 16 0 17 0 18 0 20 0
+2 5 3 9 1
+1
+fill-shot shot3 ingredient2 right left dispenser2
+8 1 0 2 4 5 0 9 3 16 0 17 0 18 0 20 0
+2 5 3 9 1
+1
+fill-shot shot3 ingredient3 left right dispenser3
+8 1 4 2 0 5 0 9 3 16 0 17 0 18 0 20 0
+2 5 4 9 2
+1
+fill-shot shot3 ingredient3 right left dispenser3
+8 1 0 2 4 5 0 9 3 16 0 17 0 18 0 20 0
+2 5 4 9 2
+1
+fill-shot shot4 ingredient1 left right dispenser1
+8 1 5 2 0 6 0 10 3 16 0 17 0 18 0 19 0
+2 6 2 10 0
+1
+fill-shot shot4 ingredient1 right left dispenser1
+8 1 0 2 5 6 0 10 3 16 0 17 0 18 0 19 0
+2 6 2 10 0
+1
+fill-shot shot4 ingredient2 left right dispenser2
+8 1 5 2 0 6 0 10 3 16 0 17 0 18 0 19 0
+2 6 3 10 1
+1
+fill-shot shot4 ingredient2 right left dispenser2
+8 1 0 2 5 6 0 10 3 16 0 17 0 18 0 19 0
+2 6 3 10 1
+1
+fill-shot shot4 ingredient3 left right dispenser3
+8 1 5 2 0 6 0 10 3 16 0 17 0 18 0 19 0
+2 6 4 10 2
+1
+fill-shot shot4 ingredient3 right left dispenser3
+8 1 0 2 5 6 0 10 3 16 0 17 0 18 0 19 0
+2 6 4 10 2
+1
+grasp left shaker1
+2 1 0 16 0
+2 1 1 16 1
+1
+grasp left shot1
+2 1 0 17 0
+2 1 2 17 1
+1
+grasp left shot2
+2 1 0 18 0
+2 1 3 18 1
+1
+grasp left shot3
+2 1 0 19 0
+2 1 4 19 1
+1
+grasp left shot4
+2 1 0 20 0
+2 1 5 20 1
+1
+grasp right shaker1
+2 2 0 16 0
+2 2 1 16 1
+1
+grasp right shot1
+2 2 0 17 0
+2 2 2 17 1
+1
+grasp right shot2
+2 2 0 18 0
+2 2 3 18 1
+1
+grasp right shot3
+2 2 0 19 0
+2 2 4 19 1
+1
+grasp right shot4
+2 2 0 20 0
+2 2 5 20 1
+1
+leave left shaker1
+1 1 1
+2 1 0 16 0
+1
+leave left shot1
+1 1 2
+2 1 0 17 0
+1
+leave left shot2
+1 1 3
+2 1 0 18 0
+1
+leave left shot3
+1 1 4
+2 1 0 19 0
+1
+leave left shot4
+1 1 5
+2 1 0 20 0
+1
+leave right shaker1
+1 2 1
+2 2 0 16 0
+1
+leave right shot1
+1 2 2
+2 2 0 17 0
+1
+leave right shot2
+1 2 3
+2 2 0 18 0
+1
+leave right shot3
+1 2 4
+2 2 0 19 0
+1
+leave right shot4
+1 2 5
+2 2 0 20 0
+1
+pour-shaker-to-shot cocktail1 shot3 left shaker1 l1 l0
+6 0 0 1 1 5 0 9 3 11 1 21 0
+3 5 1 9 4 11 0
+1
+pour-shaker-to-shot cocktail1 shot3 left shaker1 l2 l1
+6 0 0 1 1 5 0 9 3 11 2 21 0
+3 5 1 9 4 11 1
+1
+pour-shaker-to-shot cocktail1 shot3 right shaker1 l1 l0
+6 0 0 2 1 5 0 9 3 11 1 21 0
+3 5 1 9 4 11 0
+1
+pour-shaker-to-shot cocktail1 shot3 right shaker1 l2 l1
+6 0 0 2 1 5 0 9 3 11 2 21 0
+3 5 1 9 4 11 1
+1
+pour-shaker-to-shot cocktail2 shot2 left shaker1 l1 l0
+6 0 1 1 1 4 0 8 3 11 1 21 0
+3 4 1 8 4 11 0
+1
+pour-shaker-to-shot cocktail2 shot2 left shaker1 l2 l1
+6 0 1 1 1 4 0 8 3 11 2 21 0
+3 4 1 8 4 11 1
+1
+pour-shaker-to-shot cocktail2 shot2 right shaker1 l1 l0
+6 0 1 2 1 4 0 8 3 11 1 21 0
+3 4 1 8 4 11 0
+1
+pour-shaker-to-shot cocktail2 shot2 right shaker1 l2 l1
+6 0 1 2 1 4 0 8 3 11 2 21 0
+3 4 1 8 4 11 1
+1
+pour-shaker-to-shot cocktail3 shot1 left shaker1 l1 l0
+6 0 2 1 1 3 0 7 3 11 1 21 0
+3 3 1 7 4 11 0
+1
+pour-shaker-to-shot cocktail3 shot1 left shaker1 l2 l1
+6 0 2 1 1 3 0 7 3 11 2 21 0
+3 3 1 7 4 11 1
+1
+pour-shaker-to-shot cocktail3 shot1 right shaker1 l1 l0
+6 0 2 2 1 3 0 7 3 11 1 21 0
+3 3 1 7 4 11 0
+1
+pour-shaker-to-shot cocktail3 shot1 right shaker1 l2 l1
+6 0 2 2 1 3 0 7 3 11 2 21 0
+3 3 1 7 4 11 1
+1
+pour-shaker-to-shot cocktail4 shot4 left shaker1 l1 l0
+6 0 3 1 1 6 0 10 3 11 1 21 0
+3 6 1 10 4 11 0
+1
+pour-shaker-to-shot cocktail4 shot4 left shaker1 l2 l1
+6 0 3 1 1 6 0 10 3 11 2 21 0
+3 6 1 10 4 11 1
+1
+pour-shaker-to-shot cocktail4 shot4 right shaker1 l1 l0
+6 0 3 2 1 6 0 10 3 11 1 21 0
+3 6 1 10 4 11 0
+1
+pour-shaker-to-shot cocktail4 shot4 right shaker1 l2 l1
+6 0 3 2 1 6 0 10 3 11 2 21 0
+3 6 1 10 4 11 1
+1
+pour-shot-to-clean-shaker shot1 ingredient1 shaker1 left l0 l1
+6 0 4 1 2 3 2 7 0 11 0 12 0
+5 0 5 7 3 11 1 12 1 13 0
+1
+pour-shot-to-clean-shaker shot1 ingredient1 shaker1 right l0 l1
+6 0 4 2 2 3 2 7 0 11 0 12 0
+5 0 5 7 3 11 1 12 1 13 0
+1
+pour-shot-to-clean-shaker shot1 ingredient2 shaker1 left l0 l1
+6 0 4 1 2 3 3 7 1 11 0 12 0
+5 0 5 7 3 11 1 12 1 14 0
+1
+pour-shot-to-clean-shaker shot1 ingredient2 shaker1 right l0 l1
+6 0 4 2 2 3 3 7 1 11 0 12 0
+5 0 5 7 3 11 1 12 1 14 0
+1
+pour-shot-to-clean-shaker shot1 ingredient3 shaker1 left l0 l1
+6 0 4 1 2 3 4 7 2 11 0 12 0
+5 0 5 7 3 11 1 12 1 15 0
+1
+pour-shot-to-clean-shaker shot1 ingredient3 shaker1 right l0 l1
+6 0 4 2 2 3 4 7 2 11 0 12 0
+5 0 5 7 3 11 1 12 1 15 0
+1
+pour-shot-to-clean-shaker shot2 ingredient1 shaker1 left l0 l1
+6 0 4 1 3 4 2 8 0 11 0 12 0
+5 0 5 8 3 11 1 12 1 13 0
+1
+pour-shot-to-clean-shaker shot2 ingredient1 shaker1 right l0 l1
+6 0 4 2 3 4 2 8 0 11 0 12 0
+5 0 5 8 3 11 1 12 1 13 0
+1
+pour-shot-to-clean-shaker shot2 ingredient2 shaker1 left l0 l1
+6 0 4 1 3 4 3 8 1 11 0 12 0
+5 0 5 8 3 11 1 12 1 14 0
+1
+pour-shot-to-clean-shaker shot2 ingredient2 shaker1 right l0 l1
+6 0 4 2 3 4 3 8 1 11 0 12 0
+5 0 5 8 3 11 1 12 1 14 0
+1
+pour-shot-to-clean-shaker shot2 ingredient3 shaker1 left l0 l1
+6 0 4 1 3 4 4 8 2 11 0 12 0
+5 0 5 8 3 11 1 12 1 15 0
+1
+pour-shot-to-clean-shaker shot2 ingredient3 shaker1 right l0 l1
+6 0 4 2 3 4 4 8 2 11 0 12 0
+5 0 5 8 3 11 1 12 1 15 0
+1
+pour-shot-to-clean-shaker shot3 ingredient1 shaker1 left l0 l1
+6 0 4 1 4 5 2 9 0 11 0 12 0
+5 0 5 9 3 11 1 12 1 13 0
+1
+pour-shot-to-clean-shaker shot3 ingredient1 shaker1 right l0 l1
+6 0 4 2 4 5 2 9 0 11 0 12 0
+5 0 5 9 3 11 1 12 1 13 0
+1
+pour-shot-to-clean-shaker shot3 ingredient2 shaker1 left l0 l1
+6 0 4 1 4 5 3 9 1 11 0 12 0
+5 0 5 9 3 11 1 12 1 14 0
+1
+pour-shot-to-clean-shaker shot3 ingredient2 shaker1 right l0 l1
+6 0 4 2 4 5 3 9 1 11 0 12 0
+5 0 5 9 3 11 1 12 1 14 0
+1
+pour-shot-to-clean-shaker shot3 ingredient3 shaker1 left l0 l1
+6 0 4 1 4 5 4 9 2 11 0 12 0
+5 0 5 9 3 11 1 12 1 15 0
+1
+pour-shot-to-clean-shaker shot3 ingredient3 shaker1 right l0 l1
+6 0 4 2 4 5 4 9 2 11 0 12 0
+5 0 5 9 3 11 1 12 1 15 0
+1
+pour-shot-to-clean-shaker shot4 ingredient1 shaker1 left l0 l1
+6 0 4 1 5 6 2 10 0 11 0 12 0
+5 0 5 10 3 11 1 12 1 13 0
+1
+pour-shot-to-clean-shaker shot4 ingredient1 shaker1 right l0 l1
+6 0 4 2 5 6 2 10 0 11 0 12 0
+5 0 5 10 3 11 1 12 1 13 0
+1
+pour-shot-to-clean-shaker shot4 ingredient2 shaker1 left l0 l1
+6 0 4 1 5 6 3 10 1 11 0 12 0
+5 0 5 10 3 11 1 12 1 14 0
+1
+pour-shot-to-clean-shaker shot4 ingredient2 shaker1 right l0 l1
+6 0 4 2 5 6 3 10 1 11 0 12 0
+5 0 5 10 3 11 1 12 1 14 0
+1
+pour-shot-to-clean-shaker shot4 ingredient3 shaker1 left l0 l1
+6 0 4 1 5 6 4 10 2 11 0 12 0
+5 0 5 10 3 11 1 12 1 15 0
+1
+pour-shot-to-clean-shaker shot4 ingredient3 shaker1 right l0 l1
+6 0 4 2 5 6 4 10 2 11 0 12 0
+5 0 5 10 3 11 1 12 1 15 0
+1
+pour-shot-to-used-shaker shot1 ingredient1 shaker1 left l1 l2
+5 0 5 1 2 3 2 7 0 11 1
+3 7 3 11 2 13 0
+1
+pour-shot-to-used-shaker shot1 ingredient1 shaker1 right l1 l2
+5 0 5 2 2 3 2 7 0 11 1
+3 7 3 11 2 13 0
+1
+pour-shot-to-used-shaker shot1 ingredient2 shaker1 left l1 l2
+5 0 5 1 2 3 3 7 1 11 1
+3 7 3 11 2 14 0
+1
+pour-shot-to-used-shaker shot1 ingredient2 shaker1 right l1 l2
+5 0 5 2 2 3 3 7 1 11 1
+3 7 3 11 2 14 0
+1
+pour-shot-to-used-shaker shot1 ingredient3 shaker1 left l1 l2
+5 0 5 1 2 3 4 7 2 11 1
+3 7 3 11 2 15 0
+1
+pour-shot-to-used-shaker shot1 ingredient3 shaker1 right l1 l2
+5 0 5 2 2 3 4 7 2 11 1
+3 7 3 11 2 15 0
+1
+pour-shot-to-used-shaker shot2 ingredient1 shaker1 left l1 l2
+5 0 5 1 3 4 2 8 0 11 1
+3 8 3 11 2 13 0
+1
+pour-shot-to-used-shaker shot2 ingredient1 shaker1 right l1 l2
+5 0 5 2 3 4 2 8 0 11 1
+3 8 3 11 2 13 0
+1
+pour-shot-to-used-shaker shot2 ingredient2 shaker1 left l1 l2
+5 0 5 1 3 4 3 8 1 11 1
+3 8 3 11 2 14 0
+1
+pour-shot-to-used-shaker shot2 ingredient2 shaker1 right l1 l2
+5 0 5 2 3 4 3 8 1 11 1
+3 8 3 11 2 14 0
+1
+pour-shot-to-used-shaker shot2 ingredient3 shaker1 left l1 l2
+5 0 5 1 3 4 4 8 2 11 1
+3 8 3 11 2 15 0
+1
+pour-shot-to-used-shaker shot2 ingredient3 shaker1 right l1 l2
+5 0 5 2 3 4 4 8 2 11 1
+3 8 3 11 2 15 0
+1
+pour-shot-to-used-shaker shot3 ingredient1 shaker1 left l1 l2
+5 0 5 1 4 5 2 9 0 11 1
+3 9 3 11 2 13 0
+1
+pour-shot-to-used-shaker shot3 ingredient1 shaker1 right l1 l2
+5 0 5 2 4 5 2 9 0 11 1
+3 9 3 11 2 13 0
+1
+pour-shot-to-used-shaker shot3 ingredient2 shaker1 left l1 l2
+5 0 5 1 4 5 3 9 1 11 1
+3 9 3 11 2 14 0
+1
+pour-shot-to-used-shaker shot3 ingredient2 shaker1 right l1 l2
+5 0 5 2 4 5 3 9 1 11 1
+3 9 3 11 2 14 0
+1
+pour-shot-to-used-shaker shot3 ingredient3 shaker1 left l1 l2
+5 0 5 1 4 5 4 9 2 11 1
+3 9 3 11 2 15 0
+1
+pour-shot-to-used-shaker shot3 ingredient3 shaker1 right l1 l2
+5 0 5 2 4 5 4 9 2 11 1
+3 9 3 11 2 15 0
+1
+pour-shot-to-used-shaker shot4 ingredient1 shaker1 left l1 l2
+5 0 5 1 5 6 2 10 0 11 1
+3 10 3 11 2 13 0
+1
+pour-shot-to-used-shaker shot4 ingredient1 shaker1 right l1 l2
+5 0 5 2 5 6 2 10 0 11 1
+3 10 3 11 2 13 0
+1
+pour-shot-to-used-shaker shot4 ingredient2 shaker1 left l1 l2
+5 0 5 1 5 6 3 10 1 11 1
+3 10 3 11 2 14 0
+1
+pour-shot-to-used-shaker shot4 ingredient2 shaker1 right l1 l2
+5 0 5 2 5 6 3 10 1 11 1
+3 10 3 11 2 14 0
+1
+pour-shot-to-used-shaker shot4 ingredient3 shaker1 left l1 l2
+5 0 5 1 5 6 4 10 2 11 1
+3 10 3 11 2 15 0
+1
+pour-shot-to-used-shaker shot4 ingredient3 shaker1 right l1 l2
+5 0 5 2 5 6 4 10 2 11 1
+3 10 3 11 2 15 0
+1
+refill-shot shot1 ingredient1 left right dispenser1
+8 1 2 2 0 3 2 7 3 16 0 18 0 19 0 20 0
+1 7 0
+1
+refill-shot shot1 ingredient1 right left dispenser1
+8 1 0 2 2 3 2 7 3 16 0 18 0 19 0 20 0
+1 7 0
+1
+refill-shot shot1 ingredient2 left right dispenser2
+8 1 2 2 0 3 3 7 3 16 0 18 0 19 0 20 0
+1 7 1
+1
+refill-shot shot1 ingredient2 right left dispenser2
+8 1 0 2 2 3 3 7 3 16 0 18 0 19 0 20 0
+1 7 1
+1
+refill-shot shot1 ingredient3 left right dispenser3
+8 1 2 2 0 3 4 7 3 16 0 18 0 19 0 20 0
+1 7 2
+1
+refill-shot shot1 ingredient3 right left dispenser3
+8 1 0 2 2 3 4 7 3 16 0 18 0 19 0 20 0
+1 7 2
+1
+refill-shot shot2 ingredient1 left right dispenser1
+8 1 3 2 0 4 2 8 3 16 0 17 0 19 0 20 0
+1 8 0
+1
+refill-shot shot2 ingredient1 right left dispenser1
+8 1 0 2 3 4 2 8 3 16 0 17 0 19 0 20 0
+1 8 0
+1
+refill-shot shot2 ingredient2 left right dispenser2
+8 1 3 2 0 4 3 8 3 16 0 17 0 19 0 20 0
+1 8 1
+1
+refill-shot shot2 ingredient2 right left dispenser2
+8 1 0 2 3 4 3 8 3 16 0 17 0 19 0 20 0
+1 8 1
+1
+refill-shot shot2 ingredient3 left right dispenser3
+8 1 3 2 0 4 4 8 3 16 0 17 0 19 0 20 0
+1 8 2
+1
+refill-shot shot2 ingredient3 right left dispenser3
+8 1 0 2 3 4 4 8 3 16 0 17 0 19 0 20 0
+1 8 2
+1
+refill-shot shot3 ingredient1 left right dispenser1
+8 1 4 2 0 5 2 9 3 16 0 17 0 18 0 20 0
+1 9 0
+1
+refill-shot shot3 ingredient1 right left dispenser1
+8 1 0 2 4 5 2 9 3 16 0 17 0 18 0 20 0
+1 9 0
+1
+refill-shot shot3 ingredient2 left right dispenser2
+8 1 4 2 0 5 3 9 3 16 0 17 0 18 0 20 0
+1 9 1
+1
+refill-shot shot3 ingredient2 right left dispenser2
+8 1 0 2 4 5 3 9 3 16 0 17 0 18 0 20 0
+1 9 1
+1
+refill-shot shot3 ingredient3 left right dispenser3
+8 1 4 2 0 5 4 9 3 16 0 17 0 18 0 20 0
+1 9 2
+1
+refill-shot shot3 ingredient3 right left dispenser3
+8 1 0 2 4 5 4 9 3 16 0 17 0 18 0 20 0
+1 9 2
+1
+refill-shot shot4 ingredient1 left right dispenser1
+8 1 5 2 0 6 2 10 3 16 0 17 0 18 0 19 0
+1 10 0
+1
+refill-shot shot4 ingredient1 right left dispenser1
+8 1 0 2 5 6 2 10 3 16 0 17 0 18 0 19 0
+1 10 0
+1
+refill-shot shot4 ingredient2 left right dispenser2
+8 1 5 2 0 6 3 10 3 16 0 17 0 18 0 19 0
+1 10 1
+1
+refill-shot shot4 ingredient2 right left dispenser2
+8 1 0 2 5 6 3 10 3 16 0 17 0 18 0 19 0
+1 10 1
+1
+refill-shot shot4 ingredient3 left right dispenser3
+8 1 5 2 0 6 4 10 3 16 0 17 0 18 0 19 0
+1 10 2
+1
+refill-shot shot4 ingredient3 right left dispenser3
+8 1 0 2 5 6 4 10 3 16 0 17 0 18 0 19 0
+1 10 2
+1
+shake cocktail1 ingredient1 ingredient2 shaker1 left right
+9 0 5 1 1 2 0 13 0 14 0 17 0 18 0 19 0 20 0
+4 0 0 13 1 14 1 21 0
+1
+shake cocktail1 ingredient1 ingredient2 shaker1 right left
+9 0 5 1 0 2 1 13 0 14 0 17 0 18 0 19 0 20 0
+4 0 0 13 1 14 1 21 0
+1
+shake cocktail2 ingredient3 ingredient1 shaker1 left right
+9 0 5 1 1 2 0 13 0 15 0 17 0 18 0 19 0 20 0
+4 0 1 13 1 15 1 21 0
+1
+shake cocktail2 ingredient3 ingredient1 shaker1 right left
+9 0 5 1 0 2 1 13 0 15 0 17 0 18 0 19 0 20 0
+4 0 1 13 1 15 1 21 0
+1
+shake cocktail3 ingredient3 ingredient2 shaker1 left right
+9 0 5 1 1 2 0 14 0 15 0 17 0 18 0 19 0 20 0
+4 0 2 14 1 15 1 21 0
+1
+shake cocktail3 ingredient3 ingredient2 shaker1 right left
+9 0 5 1 0 2 1 14 0 15 0 17 0 18 0 19 0 20 0
+4 0 2 14 1 15 1 21 0
+1
+shake cocktail4 ingredient1 ingredient3 shaker1 left right
+9 0 5 1 1 2 0 13 0 15 0 17 0 18 0 19 0 20 0
+4 0 3 13 1 15 1 21 0
+1
+shake cocktail4 ingredient1 ingredient3 shaker1 right left
+9 0 5 1 0 2 1 13 0 15 0 17 0 18 0 19 0 20 0
+4 0 3 13 1 15 1 21 0
+1
