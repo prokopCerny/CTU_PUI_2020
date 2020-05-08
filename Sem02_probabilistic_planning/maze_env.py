@@ -17,7 +17,7 @@ class MazeAction(Enum):
 
 class MazeEnv:
     agent_location: Tuple[int, int]
-    end_location: Tuple[int, int]
+    exit_location: Tuple[int, int]
     start_location: Tuple[int, int]
     maze: np.ndarray
 
@@ -25,7 +25,7 @@ class MazeEnv:
                  start_location: Tuple[int, int],
                  end_location: Tuple[int, int],
                  maze: np.ndarray):
-        self.end_location = end_location
+        self.exit_location = end_location
         self.start_location = start_location
         self.agent_location = start_location
         self.maze = maze
@@ -37,6 +37,6 @@ class MazeEnv:
         if self.maze[potential_pos]:
             self.agent_location = potential_pos
 
-        return self.agent_location == self.end_location, self.agent_location
+        return self.agent_location == self.exit_location, self.agent_location
 
 

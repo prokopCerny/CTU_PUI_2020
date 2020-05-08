@@ -5,6 +5,7 @@ import numpy as np
 
 from maze_io import load_maze, string_maze, add_padding
 from maze_env import MazeEnv, MazeAction
+from agent import Agent
 
 if __name__ == '__main__':
     # np.random.seed(123)
@@ -12,4 +13,7 @@ if __name__ == '__main__':
     with inpath.open(mode='r') as f:
         start_loc, exit_loc, maze = add_padding(*load_maze(f))
     mazeEnv = MazeEnv(start_loc, exit_loc, maze)
-    print(mazeEnv.make_action(MazeAction.RIGHT))
+    add_symb = {start_loc: 'S', exit_loc: 'E'}
+    print(string_maze(maze, add_symb))
+    agent = Agent(mazeEnv)
+    agent.run()

@@ -34,18 +34,13 @@ def load_maze(file: TextIO) -> Tuple[Tuple[int, int], Tuple[int, int], np.ndarra
     return start_location, exit_location, maze
 
 
-def string_maze(start_loc, exit_loc, maze):
-    (start_row, start_col), (exit_row, exit_col) = start_loc, exit_loc
+def string_maze(maze, additional_symbols):
     mapping = {False: '#', True: ' '}
-    lines = []
-    for row_idx, row in enumerate(maze):
-        line = [mapping[el] for el in row]
-        if start_row == row_idx:
-            line[start_col] = 'S'
-        if exit_row == row_idx:
-            line[exit_col] = 'E'
-        lines.append(''.join(line))
-    return '\n'.join(lines)
+    lines = [[mapping[el] for el in row] for row in maze]
+    for (row, col), letter in additional_symbols.items():
+        lines[row][col] = letter
+    return '\n'.join(''.join(line) for line in lines)
+
 
 
 def add_padding(start_loc: Tuple[int, int],
