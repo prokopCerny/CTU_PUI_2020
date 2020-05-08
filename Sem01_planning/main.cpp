@@ -30,7 +30,7 @@ using std::unordered_set;
 
 class State;
 
-typedef uint32_t FACT_COST_TYPE;
+typedef int32_t FACT_COST_TYPE;
 
 class LabeledGraph {
 public:
@@ -160,7 +160,7 @@ vector<bool> init_facts(size_t num_facts, const vector<int> &facts_lst) {
 
 bool is_goal_facts_subset(const vector<bool> &facts, const strips_t &problem) {
     bool goal = true;
-    for (size_t goal_idx = 0; goal_idx < problem.goal_size; goal_idx++) {
+    for (int goal_idx = 0; goal_idx < problem.goal_size; goal_idx++) {
         if (not facts[problem.goal[goal_idx]]) {
             goal = false;
             break;
@@ -197,13 +197,13 @@ public:
     size_t facts_hash;
 
     explicit State(const strips_t &problem) :
-        cost{0},
         facts( init_facts(problem) ),
+        cost{0},
         facts_hash{ std::hash<vector<bool>>{}(facts) } {};
 
     explicit State(const Strips &problem) :
-            cost{0},
             facts( init_facts(problem) ),
+            cost{0},
             facts_hash{ std::hash<vector<bool>>{}(facts) } {};
 
     bool is_operator_applicable(const strips_operator_t &op) const {
@@ -375,6 +375,7 @@ pair<State, uint64_t> get_plan_lm(Strips &problem) {
     states.insert(std::make_pair(start_state.facts_hash, std::move(start_state)));
 
     while (not queue.empty()) {
+        //uint64_t cur_val = queue.begin()->first;
         State cur_state = std::move(states.find(queue.begin()->second)->second);
         states.erase(cur_state.facts_hash);
         queue.erase(queue.begin());
@@ -398,22 +399,33 @@ pair<State, uint64_t> get_plan_lm(Strips &problem) {
                 uint64_t cur_cost = distance[next_state.facts_hash];
                 if (appearance_it == distance.end() || cur_cost > predicted_cost) {
                     if (appearance_it != distance.end()) {
-                        queue.erase(queue.find(std::make_pair(distance[next_state.facts_hash], next_state.facts_hash)));
-                    }
+                        auto it = queue.find(std::make_pair(distance[next_state.facts_hash], next_state.facts_hash));
+                        if (it != queue.end()) {
+                            queue.erase(it);
+                            distance[next_state.facts_hash] = predicted_cost;
+                            queue.emplace(predicted_cost, next_state.facts_hash);
 
-                    distance[next_state.facts_hash] = predicted_cost;
-                    queue.emplace(predicted_cost, next_state.facts_hash);
-
-                    auto it = states.find(next_state.facts_hash);
-                    if ( it != states.end() ) {
-                        it->second = std::move(next_state);
+                            auto it2 = states.find(next_state.facts_hash);
+                            if ( it2 != states.end() ) {
+                                it2->second = std::move(next_state);
+                            } else {
+                                states.emplace(next_state.facts_hash, std::move(next_state));
+                            }
+                        }
                     } else {
-                        states.emplace(next_state.facts_hash, std::move(next_state));
+                        distance[next_state.facts_hash] = predicted_cost;
+                        queue.emplace(predicted_cost, next_state.facts_hash);
+
+                        auto it = states.find(next_state.facts_hash);
+                        if ( it != states.end() ) {
+                            it->second = std::move(next_state);
+                        } else {
+                            states.emplace(next_state.facts_hash, std::move(next_state));
+                        }
                     }
                 }
             }
         }
-
     }
 
     State not_found = State(problem);
@@ -529,7 +541,7 @@ uint64_t hmax(const State &state, const strips_t &problem, const vector<vector<b
     }
 
     uint64_t heur{0};
-    for (size_t goal_idx = 0; goal_idx < problem.goal_size; goal_idx++) {
+    for (int goal_idx = 0; goal_idx < problem.goal_size; goal_idx++) {
         heur = std::max(heur, (uint64_t) delta[problem.goal[goal_idx]]);
     }
 
@@ -607,10 +619,10 @@ pair<int, vector<int>> computeHmaxHeuristic(Strips& strips, const vector<bool>& 
 
 // ########################################################## END ALTERNATIVE #####################################################################################
 
-pair<uint64_t, vector<FACT_COST_TYPE>> hmax_for_lm(const vector<bool> &state_facts, const Strips &problem, const vector<int>& goal, const vector<vector<bool>> &op_preconditions) {
+pair<FACT_COST_TYPE , vector<FACT_COST_TYPE>> hmax_for_lm(const vector<bool> &state_facts, const Strips &problem, const vector<int>& goal, const vector<vector<bool>> &op_preconditions) {
 
     vector<FACT_COST_TYPE> delta(problem.num_facts, std::numeric_limits<FACT_COST_TYPE>::max());
-    for (size_t fact_idx = 0; fact_idx < problem.num_facts; ++fact_idx) {
+    for (int fact_idx = 0; fact_idx < problem.num_facts; ++fact_idx) {
         if (state_facts[fact_idx]) {
             delta[fact_idx] = 0;
         }
@@ -627,20 +639,20 @@ pair<uint64_t, vector<FACT_COST_TYPE>> hmax_for_lm(const vector<bool> &state_fac
 
         if (current_operator.preconditions.empty()) {
             for (size_t current_add_fact : current_operator.add_effects) {
-                delta[current_add_fact] = std::min(delta[current_add_fact], (FACT_COST_TYPE) current_operator.lm_cost);
+                delta[current_add_fact] = std::min(delta[current_add_fact], current_operator.lm_cost);
             }
         }
     }
 
     vector<bool> C(problem.num_facts, false);
 
-    set<std::pair<FACT_COST_TYPE, size_t>> queue;
-    for (size_t fact_idx = 0; fact_idx < problem.num_facts; fact_idx++) {
+    set<std::pair<FACT_COST_TYPE, int>> queue;
+    for (int fact_idx = 0; fact_idx < problem.num_facts; fact_idx++) {
         queue.emplace(delta[fact_idx], fact_idx);
     }
 
     while( not is_goal_facts_subset(C, goal)) {
-        size_t k = queue.begin()->second;
+        int k = queue.begin()->second;
         queue.erase(queue.begin());
         C[k] = true;
 
@@ -651,8 +663,8 @@ pair<uint64_t, vector<FACT_COST_TYPE>> hmax_for_lm(const vector<bool> &state_fac
 
                 if (U[op_idx] == 0) {
                     for (size_t cur_add_fact : current_operator.add_effects) {
-                        FACT_COST_TYPE potentialCost = (FACT_COST_TYPE) current_operator.lm_cost + delta[k];
-                        if (potentialCost < delta[k]) {
+                        FACT_COST_TYPE potentialCost = current_operator.lm_cost + delta[k];
+                        if (potentialCost < 0) {
                             potentialCost = std::numeric_limits<FACT_COST_TYPE>::max();
                         }
 
@@ -669,9 +681,9 @@ pair<uint64_t, vector<FACT_COST_TYPE>> hmax_for_lm(const vector<bool> &state_fac
         }
     }
 
-    uint64_t heur{0};
+    FACT_COST_TYPE heur{std::numeric_limits<FACT_COST_TYPE>::min()};
     for (int goal_fact : goal){
-        heur = std::max(heur, (uint64_t) delta[goal_fact]);
+        heur = std::max(heur, delta[goal_fact]);
     }
     return std::make_pair(heur, std::move(delta));
 }
@@ -683,8 +695,10 @@ uint64_t lmcut(const State &state,
         const vector<bool> &lm_init_facts) {
 
     static unordered_map<size_t, uint64_t> cache;
+    static FACT_COST_TYPE orig_init_hmax{std::numeric_limits<FACT_COST_TYPE>::max()};
+    static bool orig_init_hmax_computed{false};
 
-    if(cache.count(state.facts_hash) != 0) {
+    if(cache.find(state.facts_hash) != cache.end()) {
         return cache[state.facts_hash];
     }
 
@@ -692,9 +706,17 @@ uint64_t lmcut(const State &state,
         anOperator.reset_lm_cost_and_support();
     }
 
-//    auto orig_hmax = hmax_for_lm(original_init_facts, problem, problem.goal_state, op_preconditions);
-    pair<int, vector<int>> orig_hmax = computeHmaxHeuristic(problem, original_init_facts, problem.goal_state, op_preconditions);
-    if (orig_hmax.first == std::numeric_limits<FACT_COST_TYPE>::max()) {
+    if (not orig_init_hmax_computed) {
+        orig_init_hmax_computed = true;
+        pair<int, vector<int>> orig_hmax = hmax_for_lm(original_init_facts, problem, problem.goal_state, op_preconditions);
+        orig_init_hmax = orig_hmax.first;
+    }
+
+//    pair<int, vector<int>> orig_hmax = hmax_for_lm(original_init_facts, problem, problem.goal_state, op_preconditions);
+//    pair<int, vector<int>> orig_hmax = hmax_for_lm(original_init_facts, problem, problem.goal_state, op_preconditions);
+//    pair<int, vector<int>> orig_hmax = computeHmaxHeuristic(problem, original_init_facts, problem.goal_state, op_preconditions);
+    if (orig_init_hmax == std::numeric_limits<FACT_COST_TYPE>::max()) {
+        cache[state.facts_hash] = std::numeric_limits<FACT_COST_TYPE>::max();
         return std::numeric_limits<FACT_COST_TYPE>::max();
     }
 
@@ -708,20 +730,20 @@ uint64_t lmcut(const State &state,
 
     uint64_t h_lmcut{0};
 
-    //uint64_t hmax_val{0};
-    //vector<FACT_COST_TYPE> delta;
+//    uint64_t hmax_val{0};
+//    vector<FACT_COST_TYPE> delta;
     int hmax_val{};
     vector<int> delta;
-//    std::tie(hmax_val, delta) = hmax_for_lm(lm_init_facts, problem, problem.lm_goal, op_preconditions);
-    std::tie(hmax_val, delta) = computeHmaxHeuristic(problem, lm_init_facts, problem.lm_goal, op_preconditions);
+    std::tie(hmax_val, delta) = hmax_for_lm(lm_init_facts, problem, problem.lm_goal, op_preconditions);
+//    std::tie(hmax_val, delta) = computeHmaxHeuristic(problem, lm_init_facts, problem.lm_goal, op_preconditions);
     while (hmax_val > 0 and hmax_val < std::numeric_limits<int>::max()) {
 //        cout << h_lmcut << " " << hmax_val << endl;
         LabeledGraph justification(problem.num_facts);
         for (int op_idx = 0; op_idx < problem.operators.size(); op_idx++) {
             StripsOperator &op = problem.operators[op_idx];
-            int max_cost = -1;
+            FACT_COST_TYPE max_cost = std::numeric_limits<FACT_COST_TYPE>::min();
             for (int pre : op.preconditions) {
-                if (((int64_t)delta[pre]) > max_cost) {
+                if (delta[pre] > max_cost) {
                     max_cost = delta[pre];
                     op.support = pre;
                 }
@@ -751,15 +773,23 @@ uint64_t lmcut(const State &state,
 //            h_lmcut = std::numeric_limits<uint64_t>::max();
 //            break;
 //        }
+//        if (min_landmark_cost < 0) {
+//            cout << "wtf" << endl;
+//        }
         for (int landmark: landmarks) {
             problem.operators[landmark].lm_cost -= min_landmark_cost;
+            if (problem.operators[landmark].lm_cost < 0) {
+                cout << "wtf2" << endl;
+                problem.operators[landmark].lm_cost = 0;
+            }
         }
 
-        std::tie(hmax_val, delta) = computeHmaxHeuristic(problem, lm_init_facts, problem.lm_goal, op_preconditions);
+        std::tie(hmax_val, delta) = hmax_for_lm(lm_init_facts, problem, problem.lm_goal, op_preconditions);
+//        std::tie(hmax_val, delta) = computeHmaxHeuristic(problem, lm_init_facts, problem.lm_goal, op_preconditions);
         ;
     }
 
-    if (hmax_val == std::numeric_limits<int>::max()) {
+    if (hmax_val >= std::numeric_limits<int>::max() or hmax_val < 0) {
         h_lmcut = std::numeric_limits<int>::max();
     }
 //    cout << "leave" << endl;
@@ -785,8 +815,7 @@ find_landmarks_given_N_star(LabeledGraph &graph, int start_fact, Strips &problem
             int op_idx = neigh_fact_op_pair.second;
             if (N_star[neigh_fact]) {
                 landmarks.insert(op_idx);
-            }
-            if (not N_star[neigh_fact] and not visited[neigh_fact]) {
+            } else if (not visited[neigh_fact]) {
                 visited[neigh_fact] = true;
                 queue.push(neigh_fact);
             }
