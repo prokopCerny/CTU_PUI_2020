@@ -1,5 +1,6 @@
-from typing import Tuple, Any, Optional, List
+from typing import Tuple, Optional
 
+from agent_utils import Stats, neighbors
 from maze_env import MazeEnv, MazeAction
 from maze_io import string_maze
 
@@ -23,25 +24,6 @@ class PriorityQueue:
         return priority, item
 
 
-class Stats:
-    expanded_nodes: List[int]
-
-    def __init__(self, optimal_length: int):
-        self.expanded_nodes = []
-        self.optimal_length = optimal_length
-        self.replan_count = 0
-        self.steps = 0
-
-
-def neighbors(location: Tuple[int, int], maze: np.ndarray):
-    row, col = location
-    for action in MazeAction:
-        row_offset, col_offset = action.value
-        possible_row, possible_col = row + row_offset, col + col_offset
-        if maze[possible_row, possible_col]:
-            yield possible_row, possible_col
-
-
 def manhattan(a: Tuple[int, int], b: Tuple[int, int]):
     a, b = np.array(a), np.array(b)
     return np.sum(np.abs(a-b), axis=0)
@@ -63,7 +45,7 @@ class Agent:
     exit_location: Tuple[int, int]
     current_location: Tuple[int, int]
 
-    def __init__(self, env: MazeEnv, heuristic=zero_heuristic, verbose=False):
+    def __init__(self, env: MazeEnv, heuristic=zero_heuristic, verbose=False, **kw):
         self.env = env
         self.current_location = env.agent_location
         self.exit_location = env.exit_location
@@ -74,7 +56,7 @@ class Agent:
         self.verbose = verbose
 
     def run(self):
-        self.statistics = Stats(optimal_length=len(self.a_star_plan()[0])-1)
+        self.statistics = Stats()
         num = 0
         while self.current_location != self.exit_location:
 
