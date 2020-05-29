@@ -42,7 +42,6 @@ def string_maze(maze, additional_symbols):
     return '\n'.join(''.join(line) for line in lines)
 
 
-
 def add_padding(start_loc: Tuple[int, int],
                 exit_loc: Tuple[int, int],
                 maze: np.ndarray, padding: int = 1) -> Tuple[Tuple[int, int], Tuple[int, int], np.ndarray]:
