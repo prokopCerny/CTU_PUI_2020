@@ -38,7 +38,7 @@ def zero_heuristic(a: Tuple[int, int], b: Tuple[int, int]):
     return 0
 
 
-class Agent:
+class AstarAgent:
     env: MazeEnv
     plan: deque
     maze: np.ndarray
